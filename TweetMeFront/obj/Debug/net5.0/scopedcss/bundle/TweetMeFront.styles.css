@@ -52,6 +52,34 @@ button[b-mf133ba6c0] {
 }
 /* /Pages/Popular.razor.rz.scp.css */
 /* /Pages/Profile.razor.rz.scp.css */
+/* /Pages/Search.razor.rz.scp.css */
+.search-page[b-qqufjelhzy] {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.search-text[b-qqufjelhzy] {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 5vw;
+    color: #00ff90;
+}
+
+.search[b-qqufjelhzy] {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.search-box[b-qqufjelhzy]{
+    outline: none;
+    padding: 0.02em 1em;
+}
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-2q326z1amf] {
     position: relative;

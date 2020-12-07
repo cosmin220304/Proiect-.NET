@@ -6,10 +6,12 @@
 
   <ItemGroup>
     <None Remove="Pages\Friends.razor.css" />
+    <None Remove="Pages\Search.razor.css" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="Pages\Friends.razor.css" />
+    <Content Include="Pages\Search.razor.css" />
   </ItemGroup>
 
   <ItemGroup>

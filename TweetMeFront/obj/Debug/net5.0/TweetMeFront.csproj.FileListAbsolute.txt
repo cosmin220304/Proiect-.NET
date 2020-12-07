@@ -630,11 +630,10 @@ D:\Documente\GitHub Projects\Proiect-.NET\TweetMeFront\obj\Debug\net5.0\Razor\Pa
 D:\Documente\GitHub Projects\Proiect-.NET\TweetMeFront\obj\Debug\net5.0\RazorDeclaration\Pages\Search.razor.g.cs
 D:\Documente\GitHub Projects\Proiect-.NET\TweetMeFront\obj\Debug\net5.0\Razor\Pages\Search.razor.g.cs
 D:\Documente\GitHub Projects\Proiect-.NET\TweetMeFront\obj\Debug\net5.0\scopedcss\Pages\Profile.razor.rz.scp.css
-D:\Documente\GitHub Projects\Proiect-.NET\TweetMeFront\obj\Debug\net5.0\RazorDeclaration\Pages\Search.razor.razor.g.cs
 D:\Documente\GitHub Projects\Proiect-.NET\TweetMeFront\obj\Debug\net5.0\RazorDeclaration\Pages\Friends.razor.g.cs
 D:\Documente\GitHub Projects\Proiect-.NET\TweetMeFront\obj\Debug\net5.0\RazorDeclaration\Pages\Popular.razor.g.cs
-D:\Documente\GitHub Projects\Proiect-.NET\TweetMeFront\obj\Debug\net5.0\Razor\Pages\Search.razor.razor.g.cs
 D:\Documente\GitHub Projects\Proiect-.NET\TweetMeFront\obj\Debug\net5.0\Razor\Pages\Friends.razor.g.cs
 D:\Documente\GitHub Projects\Proiect-.NET\TweetMeFront\obj\Debug\net5.0\Razor\Pages\Popular.razor.g.cs
 D:\Documente\GitHub Projects\Proiect-.NET\TweetMeFront\obj\Debug\net5.0\scopedcss\Pages\Popular.razor.rz.scp.css
 D:\Documente\GitHub Projects\Proiect-.NET\TweetMeFront\obj\Debug\net5.0\scopedcss\Pages\Friends.razor.rz.scp.css
+D:\Documente\GitHub Projects\Proiect-.NET\TweetMeFront\obj\Debug\net5.0\scopedcss\Pages\Search.razor.rz.scp.css
