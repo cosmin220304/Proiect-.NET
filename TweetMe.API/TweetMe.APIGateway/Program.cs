@@ -3,13 +3,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace TweetMe.APIGateway
 {
-    public class Program
+    public static class Program
     {
         public static void Main(string[] args)
         {
@@ -21,10 +18,10 @@ namespace TweetMe.APIGateway
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                })
-               .ConfigureAppConfiguration((hostingContext, config) =>
-               {
-                   config.AddJsonFile("ocelot.json");
-               });
+                    webBuilder.ConfigureAppConfiguration((hostingContext, config) =>
+                    {
+                        config.AddJsonFile($"ocelot.json");
+                    });
+                });
     }
 }

@@ -35,3 +35,40 @@ D:\tweet-project\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.A
 D:\tweet-project\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\ref\TweetMe.API.dll
 D:\tweet-project\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.pdb
 D:\tweet-project\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.genruntimeconfig.cache
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\appsettings.json
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\TweetMe.API.exe
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\TweetMe.API.deps.json
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\TweetMe.API.runtimeconfig.json
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\TweetMe.API.runtimeconfig.dev.json
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\TweetMe.API.dll
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\ref\TweetMe.API.dll
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\TweetMe.API.pdb
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.csprojAssemblyReference.cache
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.AssemblyInfoInputs.cache
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.AssemblyInfo.cs
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.csproj.CoreCompileInputs.cache
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\staticwebassets\TweetMe.API.StaticWebAssets.Manifest.cache
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\staticwebassets\TweetMe.API.StaticWebAssets.xml
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\scopedcss\bundle\TweetMe.API.styles.css
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.RazorTargetAssemblyInfo.cache
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.csproj.CopyComplete
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.dll
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\ref\TweetMe.API.dll
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.pdb
+C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.genruntimeconfig.cache
