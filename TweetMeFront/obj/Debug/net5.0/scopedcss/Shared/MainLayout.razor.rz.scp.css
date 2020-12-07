@@ -1,0 +1,28 @@
+.page[b-2q326z1amf] {
+    position: relative;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    overflow-x: hidden;
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+p[b-2q326z1amf]{
+    padding: 0;
+    margin: 0
+}
+
+.main[b-2q326z1amf] {
+    width: 90%;
+    height: 100%;
+    padding: 1em;
+    margin: auto;
+}
+
+.navbar[b-2q326z1amf] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+

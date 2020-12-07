@@ -1,0 +1,42 @@
+.nav[b-o67f2dhjzi] {
+    min-width: 80%;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+
+   .nav > div[b-o67f2dhjzi] {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+.icon[b-o67f2dhjzi]{
+    font-size: 1.8vw;
+    font-weight: bold;
+}
+
+a[b-o67f2dhjzi] {
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-item[b-o67f2dhjzi] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.show-nav[b-o67f2dhjzi]{
+    display: flex;
+}
+
+.hide-nav[b-o67f2dhjzi]{
+    display: none;
+}

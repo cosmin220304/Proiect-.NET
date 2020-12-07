@@ -1,0 +1,4 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="D:\Documente\GitHub Projects\Proiect-.NET\TweetMeFront\bin\Debug\net5.0\wwwroot\" />
+  <ContentRoot BasePath="/" Path="D:\Documente\GitHub Projects\Proiect-.NET\TweetMeFront\obj\Debug\net5.0\scopedcss\bundle\" />
+</StaticWebAssets>
