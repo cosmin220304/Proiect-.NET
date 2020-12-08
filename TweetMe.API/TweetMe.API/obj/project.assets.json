@@ -586,19 +586,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\adria\\.nuget\\packages\\": {}
+    "C:\\Users\\Cosmin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\adria\\Documents\\Introducere in .NET\\Proiect-.NET\\TweetMe.API\\TweetMe.API\\TweetMe.API.csproj",
+      "projectUniqueName": "D:\\github\\Proiect-.NET\\TweetMe.API\\TweetMe.API\\TweetMe.API.csproj",
       "projectName": "TweetMe.API",
-      "projectPath": "C:\\Users\\adria\\Documents\\Introducere in .NET\\Proiect-.NET\\TweetMe.API\\TweetMe.API\\TweetMe.API.csproj",
-      "packagesPath": "C:\\Users\\adria\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\adria\\Documents\\Introducere in .NET\\Proiect-.NET\\TweetMe.API\\TweetMe.API\\obj\\",
+      "projectPath": "D:\\github\\Proiect-.NET\\TweetMe.API\\TweetMe.API\\TweetMe.API.csproj",
+      "packagesPath": "C:\\Users\\Cosmin\\.nuget\\packages\\",
+      "outputPath": "D:\\github\\Proiect-.NET\\TweetMe.API\\TweetMe.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\adria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Cosmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

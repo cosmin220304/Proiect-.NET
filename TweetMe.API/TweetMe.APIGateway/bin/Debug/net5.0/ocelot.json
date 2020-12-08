@@ -1,17 +1,30 @@
 {
-    "Routes": [
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/test",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
         {
-            "DownstreamPathTemplate": "/api/test",
-            "DownstreamScheme": "https",
-            "DownstreamHostAndPorts": [
-                {
-                    "Host": "localhost",
-                    "Port": 44387
-                }
-            ],
-
-            "UpstreamPathTemplate": "/test",
-            "UpstreamHttpMethod": [ "GET" ]
+          "Host": "localhost",
+          "Port": 44387
         }
-    ]
-}
+      ],
+
+      "UpstreamPathTemplate": "/test",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/predictions",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44355
+        }
+      ],
+
+      "UpstreamPathTemplate": "/tweet-reco",
+      "UpstreamHttpMethod": [ "GET" ]
+    }
+  ]
+} 
