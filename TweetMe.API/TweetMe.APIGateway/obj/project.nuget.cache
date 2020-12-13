@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pqfIQNMFe1l993f5PPLsffx/9/RnlHZepdN5KeRx4siQ8tMMSKoT5HBzK6Tq7J8yYuvjhY/on0GmgEuXb9vDAQ==",
+  "dgSpecHash": "n8WbpQyewd40i7amBCFKyRQ6+jkAhM/LxYqiCYIO2qxyYB9cpF3f+OYKMHwDNGgCUBF35bVE3zwywrVLlIpNWg==",
   "success": true,
-  "projectFilePath": "D:\\Proiect-.NET\\TweetMe.API\\TweetMe.APIGateway\\TweetMe.APIGateway.csproj",
+  "projectFilePath": "D:\\.NET Project\\TweetMe.API\\TweetMe.APIGateway\\TweetMe.APIGateway.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cosmin.aftanase\\.nuget\\packages\\fluentvalidation\\8.6.2\\fluentvalidation.8.6.2.nupkg.sha512",
     "C:\\Users\\cosmin.aftanase\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.3\\microsoft.aspnetcore.jsonpatch.3.1.3.nupkg.sha512",
@@ -17,5 +17,12 @@
     "C:\\Users\\cosmin.aftanase\\.nuget\\packages\\system.componentmodel.annotations\\4.4.1\\system.componentmodel.annotations.4.4.1.nupkg.sha512",
     "C:\\Users\\cosmin.aftanase\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.0\\system.diagnostics.diagnosticsource.4.7.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file D:\\.NET Project\\TweetMe.API\\TweetMe.APIGateway\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
