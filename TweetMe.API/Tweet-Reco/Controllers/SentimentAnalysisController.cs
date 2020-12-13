@@ -16,7 +16,20 @@ namespace SentimentAnalysisAPI.Controllers
         }
 
         [HttpPost]
-        public ActionResult<string> Post([FromBody] ModelInput data)
+        public ActionResult<int> Post([FromBody] ModelInput data)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+
+            var predictionResult = _predictionEnginePool.Predict(modelName: "SentimentAnalysisModel", example: data);
+
+            return Ok(predictionResult.Prediction);
+        }
+
+        [HttpGet]
+        public ActionResult<int> Get([FromQuery] ModelInput data)
         {
             if (!ModelState.IsValid)
             {
