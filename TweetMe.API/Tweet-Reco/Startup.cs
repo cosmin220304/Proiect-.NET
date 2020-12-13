@@ -5,18 +5,17 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.ML;
 using Microsoft.OpenApi.Models;
-using SentimentAnalysisAPI.DataModels;
+using TweetMe_APIML.Model;
 
 namespace SentimentAnalysisAPI
 {
     public class Startup
     {
+        public IConfiguration Configuration { get; }
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
-
-        public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -25,10 +24,10 @@ namespace SentimentAnalysisAPI
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "SentimentAnalysisAPI", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Tweet-Reco", Version = "v2" });
             });
-            services.AddPredictionEnginePool<SentimentData, SentimentPrediction>()
-                .FromFile(modelName: "SentimentAnalysisModel", filePath: "MLModels/sentiment_model.zip", watchForChanges: true);
+            services.AddPredictionEnginePool<ModelInput, ModelOutput>()
+                .FromFile(modelName: "SentimentAnalysisModel", filePath: "MLModels/MLModel.zip", watchForChanges: true);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,7 +37,7 @@ namespace SentimentAnalysisAPI
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "SentimentAnalysisAPI v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Tweet-Reco"));
             }
 
             app.UseRouting();

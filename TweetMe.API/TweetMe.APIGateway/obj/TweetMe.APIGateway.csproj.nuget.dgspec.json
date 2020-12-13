@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\github\\Proiect-.NET\\TweetMe.API\\TweetMe.APIGateway\\TweetMe.APIGateway.csproj": {}
+    "D:\\Proiect-.NET\\TweetMe.API\\TweetMe.APIGateway\\TweetMe.APIGateway.csproj": {}
   },
   "projects": {
-    "D:\\github\\Proiect-.NET\\TweetMe.API\\TweetMe.APIGateway\\TweetMe.APIGateway.csproj": {
+    "D:\\Proiect-.NET\\TweetMe.API\\TweetMe.APIGateway\\TweetMe.APIGateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\github\\Proiect-.NET\\TweetMe.API\\TweetMe.APIGateway\\TweetMe.APIGateway.csproj",
+        "projectUniqueName": "D:\\Proiect-.NET\\TweetMe.API\\TweetMe.APIGateway\\TweetMe.APIGateway.csproj",
         "projectName": "TweetMe.APIGateway",
-        "projectPath": "D:\\github\\Proiect-.NET\\TweetMe.API\\TweetMe.APIGateway\\TweetMe.APIGateway.csproj",
-        "packagesPath": "C:\\Users\\Cosmin\\.nuget\\packages\\",
-        "outputPath": "D:\\github\\Proiect-.NET\\TweetMe.API\\TweetMe.APIGateway\\obj\\",
+        "projectPath": "D:\\Proiect-.NET\\TweetMe.API\\TweetMe.APIGateway\\TweetMe.APIGateway.csproj",
+        "packagesPath": "C:\\Users\\cosmin.aftanase\\.nuget\\packages\\",
+        "outputPath": "D:\\Proiect-.NET\\TweetMe.API\\TweetMe.APIGateway\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Cosmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cosmin.aftanase\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

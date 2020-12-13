@@ -1,7 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.ML;
-using SentimentAnalysisAPI.DataModels;
-using System;
+using TweetMe_APIML.Model;
 
 namespace SentimentAnalysisAPI.Controllers
 {
@@ -9,28 +7,30 @@ namespace SentimentAnalysisAPI.Controllers
     [ApiController]
     public class SentimentAnalysisController : ControllerBase
     {
-        private const string P = "Positive";
-        private const string N = "Negative";
-        private readonly PredictionEnginePool<SentimentData, SentimentPrediction> _predictionEnginePool;
+        //private readonly PredictionEnginePool<ModelInput, ModelOutput> _predictionEnginePool;
 
-        public SentimentAnalysisController(PredictionEnginePool<SentimentData, SentimentPrediction> predictionEnginePool) 
-        {
-            this._predictionEnginePool = predictionEnginePool;
-        }
+        //public SentimentAnalysisController(PredictionEnginePool<SentimentData, SentimentPrediction> predictionEnginePool) 
+        //{
+        //    this._predictionEnginePool = predictionEnginePool;
+        //}
 
         [HttpPost]
-        public ActionResult<string> Post([FromBody] SentimentData data)
+        public ActionResult<string> Post([FromBody] ModelInput data)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest();
             }
 
-            SentimentPrediction predictedValue = _predictionEnginePool.Predict(modelName: "SentimentAnalysisModel", example: data);
+            ModelInput sampleData = new ModelInput()
+            {
+                SentimentText = @"is so sad for my APL friend.............",
+            };
 
-            string sentiment = Convert.ToBoolean(predictedValue.Prediction) ? P : N;
+            // Make a single prediction on the sample data and print results
+            var predictionResult = ConsumeModel.Predict(sampleData);
 
-            return Ok(sentiment);
+            return Ok(predictionResult);
         }
     }
 }
