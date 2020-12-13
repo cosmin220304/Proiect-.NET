@@ -1,18 +1,19 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.ML;
 using TweetMe_APIML.Model;
 
 namespace SentimentAnalysisAPI.Controllers
 {
-    [Route("api/v1/predictions")]
+    [Route("tweet-reco")]
     [ApiController]
     public class SentimentAnalysisController : ControllerBase
     {
-        //private readonly PredictionEnginePool<ModelInput, ModelOutput> _predictionEnginePool;
+        private readonly PredictionEnginePool<ModelInput, ModelOutput> _predictionEnginePool;
 
-        //public SentimentAnalysisController(PredictionEnginePool<SentimentData, SentimentPrediction> predictionEnginePool) 
-        //{
-        //    this._predictionEnginePool = predictionEnginePool;
-        //}
+        public SentimentAnalysisController(PredictionEnginePool<ModelInput, ModelOutput> predictionEnginePool)
+        {
+            _predictionEnginePool = predictionEnginePool;
+        }
 
         [HttpPost]
         public ActionResult<string> Post([FromBody] ModelInput data)
@@ -22,15 +23,9 @@ namespace SentimentAnalysisAPI.Controllers
                 return BadRequest();
             }
 
-            ModelInput sampleData = new ModelInput()
-            {
-                SentimentText = @"is so sad for my APL friend.............",
-            };
+            var predictionResult = _predictionEnginePool.Predict(modelName: "SentimentAnalysisModel", example: data);
 
-            // Make a single prediction on the sample data and print results
-            var predictionResult = ConsumeModel.Predict(sampleData);
-
-            return Ok(predictionResult);
+            return Ok(predictionResult.Prediction);
         }
     }
 }
