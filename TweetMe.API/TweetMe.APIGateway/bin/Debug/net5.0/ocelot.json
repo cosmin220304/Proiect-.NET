@@ -24,7 +24,7 @@
       ],
 
       "UpstreamPathTemplate": "/tweet-reco",
-      "UpstreamHttpMethod": [ "GET" ]
+      "UpstreamHttpMethod": [ "POST" ]
     }
   ]
 } 
