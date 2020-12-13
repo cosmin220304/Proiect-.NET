@@ -67,18 +67,18 @@ namespace Stalker.Controllers
             return user;
         }
 
-        [HttpGet("tweets/{id}")]
-        public async Task<UserViewModel> GetTweetsOfUser(int id)
+        [HttpGet("tweets")]
+        public async Task<List<TweetViewModel>> GetTweetsOfUser([FromQuery] string username, [FromQuery] int count)
         {
             var client = _twitterConnection.GetTwitterClient();
 
-            string url = $"1.1/users/show.json?user_id={id}&include_user_entities=false";
+            string url = $"1.1/statuses/user_timeline.json?screen_name={username}&count={count}";
 
             HttpResponseMessage response = await client.GetAsync(url);
             var responseBody = await response.Content.ReadAsStringAsync();
-            UserViewModel user = JsonConvert.DeserializeObject<UserViewModel>(responseBody);
+            List<TweetViewModel> tweets = JsonConvert.DeserializeObject<List<TweetViewModel>>(responseBody);
 
-            return user;
+            return tweets;
         }
     }
 }
