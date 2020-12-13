@@ -1,11 +1,13 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Microsoft.AspNetCore.Mvc;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using Newtonsoft.Json.Linq;
+using Stalker.Views;
+using Stalker.Services;
+using Stalker.Interfaces;
 
 namespace Stalker.Controllers
 {
@@ -13,22 +15,27 @@ namespace Stalker.Controllers
     [ApiController]
     public class TweetStalker : ControllerBase
     {
-        static readonly HttpClient client = new HttpClient();
-        string bearerToken = "AAAAAAAAAAAAAAAAAAAAALeKKQEAAAAAe9Q1UWlIkrRmnn6mDXYr7ReIqKM%3D2NVErtZ8HwZewlyejIZltJAL7ghbQ1SalgGWi0Nd8hZxqS5NHB";
+        private readonly ITwitterConnection _twitterConnection;
 
-        [HttpGet("friends/{username}")]
-        public async Task<string> GetFriendsAsync(string username)
+        public TweetStalker(ITwitterConnection twitterConnection)
         {
-            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", bearerToken);
-
-            string url = $"https://api.twitter.com/1.1/friends/list.json?screen_name={username}";
+            _twitterConnection = twitterConnection;
+        }
+        [HttpGet("friends/{username}")]
+        public async Task<List<UserViewModel>> GetFriendsAsync(string username)
+        {
+            var client = _twitterConnection.GetTwitterClient();
+           
+            string url = $"1.1/friends/list.json?screen_name={username}&include_user_entities=false";
          
             HttpResponseMessage response = await client.GetAsync(url);
             response.EnsureSuccessStatusCode();
-            string responseBody = await response.Content.ReadAsStringAsync();
-
-
-            return responseBody;
+            var responseBody = await response.Content.ReadAsStringAsync();
+            FriendListViewModel friends =  JsonConvert.DeserializeObject<FriendListViewModel>(responseBody);
+          
+            return friends.Users;
         }
+
+
     }
 }

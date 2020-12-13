@@ -7,6 +7,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Stalker.Interfaces;
+using Stalker.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,12 +28,13 @@ namespace Stalker
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Stalker", Version = "v1" });
             });
+
+            services.AddTransient<ITwitterConnection, TwitterConnection>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
