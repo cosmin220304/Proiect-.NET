@@ -21,6 +21,7 @@ namespace Stalker.Controllers
         {
             _twitterConnection = twitterConnection;
         }
+
         [HttpGet("friends/{username}")]
         public async Task<List<UserViewModel>> GetFriendsAsync(string username)
         {
@@ -36,6 +37,48 @@ namespace Stalker.Controllers
             return friends.Users;
         }
 
+        [HttpGet("users/{id}")]
+        public async Task<UserViewModel> GetUserByIdAsync(int id)
+        {
+            var client = _twitterConnection.GetTwitterClient();
 
+            string url = $"1.1/users/show.json?user_id={id}&include_user_entities=false";
+
+            HttpResponseMessage response = await client.GetAsync(url);
+            var responseBody = await response.Content.ReadAsStringAsync();
+            UserViewModel user = JsonConvert.DeserializeObject<UserViewModel>(responseBody);
+
+            return user;
+        }
+
+        //querystring username
+
+        [HttpGet("users")]
+        public async Task<UserViewModel> GetUserByUsernameAsync([FromQuery] string username)
+        {
+            var client = _twitterConnection.GetTwitterClient();
+
+            string url = $"1.1/users/show.json?screen_name={username}&include_user_entities=false";
+
+            HttpResponseMessage response = await client.GetAsync(url);
+            var responseBody = await response.Content.ReadAsStringAsync();
+            UserViewModel user = JsonConvert.DeserializeObject<UserViewModel>(responseBody);
+
+            return user;
+        }
+
+        [HttpGet("tweets/{id}")]
+        public async Task<UserViewModel> GetTweetsOfUser(int id)
+        {
+            var client = _twitterConnection.GetTwitterClient();
+
+            string url = $"1.1/users/show.json?user_id={id}&include_user_entities=false";
+
+            HttpResponseMessage response = await client.GetAsync(url);
+            var responseBody = await response.Content.ReadAsStringAsync();
+            UserViewModel user = JsonConvert.DeserializeObject<UserViewModel>(responseBody);
+
+            return user;
+        }
     }
 }
