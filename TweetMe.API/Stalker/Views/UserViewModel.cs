@@ -11,6 +11,9 @@ namespace Stalker.Views
         [JsonProperty("name")]
         public string Name { get; set; }
 
+        [JsonProperty("screen_name")]
+        public string Username { get; set; }
+
         [JsonProperty("profile_image_url_https")]
         public string ImageUrl { get; set; }
     }
