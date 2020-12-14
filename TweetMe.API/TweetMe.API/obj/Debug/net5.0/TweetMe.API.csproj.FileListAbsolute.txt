@@ -72,114 +72,40 @@ C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.AP
 C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\ref\TweetMe.API.dll
 C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.pdb
 C:\Users\adria\Documents\Introducere in .NET\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.genruntimeconfig.cache
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\appsettings.Development.json
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\appsettings.json
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\TweetMe.API.exe
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\TweetMe.API.deps.json
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\TweetMe.API.runtimeconfig.json
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\TweetMe.API.runtimeconfig.dev.json
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\TweetMe.API.dll
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\ref\TweetMe.API.dll
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\TweetMe.API.pdb
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.OpenApi.dll
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.csprojAssemblyReference.cache
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.GeneratedMSBuildEditorConfig.editorconfig
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.AssemblyInfoInputs.cache
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.AssemblyInfo.cs
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.csproj.CoreCompileInputs.cache
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.MvcApplicationPartsAssemblyInfo.cs
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.MvcApplicationPartsAssemblyInfo.cache
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\staticwebassets\TweetMe.API.StaticWebAssets.Manifest.cache
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\staticwebassets\TweetMe.API.StaticWebAssets.xml
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\scopedcss\bundle\TweetMe.API.styles.css
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.RazorTargetAssemblyInfo.cache
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.csproj.CopyComplete
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.dll
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\ref\TweetMe.API.dll
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.pdb
-D:\github\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.genruntimeconfig.cache
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\appsettings.Development.json
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\appsettings.json
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\TweetMe.API.exe
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\TweetMe.API.deps.json
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\TweetMe.API.runtimeconfig.json
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\TweetMe.API.runtimeconfig.dev.json
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\TweetMe.API.dll
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\ref\TweetMe.API.dll
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\TweetMe.API.pdb
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.OpenApi.dll
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.csprojAssemblyReference.cache
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.GeneratedMSBuildEditorConfig.editorconfig
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.AssemblyInfoInputs.cache
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.AssemblyInfo.cs
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.csproj.CoreCompileInputs.cache
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.MvcApplicationPartsAssemblyInfo.cs
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.MvcApplicationPartsAssemblyInfo.cache
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\staticwebassets\TweetMe.API.StaticWebAssets.Manifest.cache
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\staticwebassets\TweetMe.API.StaticWebAssets.xml
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\scopedcss\bundle\TweetMe.API.styles.css
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.RazorTargetAssemblyInfo.cache
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.csproj.CopyComplete
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.dll
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\ref\TweetMe.API.dll
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.pdb
-D:\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.genruntimeconfig.cache
-D:\.NET Project\TweetMe.API\TweetMe.API\bin\Debug\net5.0\appsettings.Development.json
-D:\.NET Project\TweetMe.API\TweetMe.API\bin\Debug\net5.0\appsettings.json
-D:\.NET Project\TweetMe.API\TweetMe.API\bin\Debug\net5.0\TweetMe.API.exe
-D:\.NET Project\TweetMe.API\TweetMe.API\bin\Debug\net5.0\TweetMe.API.deps.json
-D:\.NET Project\TweetMe.API\TweetMe.API\bin\Debug\net5.0\TweetMe.API.runtimeconfig.json
-D:\.NET Project\TweetMe.API\TweetMe.API\bin\Debug\net5.0\TweetMe.API.runtimeconfig.dev.json
-D:\.NET Project\TweetMe.API\TweetMe.API\bin\Debug\net5.0\TweetMe.API.dll
-D:\.NET Project\TweetMe.API\TweetMe.API\bin\Debug\net5.0\ref\TweetMe.API.dll
-D:\.NET Project\TweetMe.API\TweetMe.API\bin\Debug\net5.0\TweetMe.API.pdb
-D:\.NET Project\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-D:\.NET Project\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
-D:\.NET Project\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
-D:\.NET Project\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
-D:\.NET Project\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
-D:\.NET Project\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-D:\.NET Project\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
-D:\.NET Project\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.OpenApi.dll
-D:\.NET Project\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
-D:\.NET Project\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-D:\.NET Project\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\.NET Project\TweetMe.API\TweetMe.API\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
-D:\.NET Project\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.csprojAssemblyReference.cache
-D:\.NET Project\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.GeneratedMSBuildEditorConfig.editorconfig
-D:\.NET Project\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.AssemblyInfoInputs.cache
-D:\.NET Project\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.AssemblyInfo.cs
-D:\.NET Project\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.csproj.CoreCompileInputs.cache
-D:\.NET Project\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.MvcApplicationPartsAssemblyInfo.cs
-D:\.NET Project\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.MvcApplicationPartsAssemblyInfo.cache
-D:\.NET Project\TweetMe.API\TweetMe.API\obj\Debug\net5.0\staticwebassets\TweetMe.API.StaticWebAssets.Manifest.cache
-D:\.NET Project\TweetMe.API\TweetMe.API\obj\Debug\net5.0\staticwebassets\TweetMe.API.StaticWebAssets.xml
-D:\.NET Project\TweetMe.API\TweetMe.API\obj\Debug\net5.0\scopedcss\bundle\TweetMe.API.styles.css
-D:\.NET Project\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.RazorTargetAssemblyInfo.cache
-D:\.NET Project\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.csproj.CopyComplete
-D:\.NET Project\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.dll
-D:\.NET Project\TweetMe.API\TweetMe.API\obj\Debug\net5.0\ref\TweetMe.API.dll
-D:\.NET Project\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.pdb
-D:\.NET Project\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.genruntimeconfig.cache
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\appsettings.Development.json
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\appsettings.json
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\TweetMe.API.exe
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\TweetMe.API.deps.json
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\TweetMe.API.runtimeconfig.json
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\TweetMe.API.runtimeconfig.dev.json
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\TweetMe.API.dll
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\ref\TweetMe.API.dll
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\TweetMe.API.pdb
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Microsoft.OpenApi.dll
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.csprojAssemblyReference.cache
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.AssemblyInfoInputs.cache
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.AssemblyInfo.cs
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.csproj.CoreCompileInputs.cache
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.MvcApplicationPartsAssemblyInfo.cs
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.MvcApplicationPartsAssemblyInfo.cache
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\staticwebassets\TweetMe.API.StaticWebAssets.Manifest.cache
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\staticwebassets\TweetMe.API.StaticWebAssets.xml
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\scopedcss\bundle\TweetMe.API.styles.css
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.RazorTargetAssemblyInfo.cache
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.csproj.CopyComplete
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.dll
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\ref\TweetMe.API.dll
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.pdb
+D:\dotnet-project\Proiect-.NET\TweetMe.API\TweetMe.API\obj\Debug\net5.0\TweetMe.API.genruntimeconfig.cache
