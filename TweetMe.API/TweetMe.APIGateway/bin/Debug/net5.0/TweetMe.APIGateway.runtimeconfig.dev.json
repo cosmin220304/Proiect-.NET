@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\mitit\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\mitit\\.nuget\\packages"
+      "C:\\Users\\adria\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\adria\\.nuget\\packages"
     ]
   }
 }

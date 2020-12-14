@@ -1,69 +1,96 @@
 {
-  "Routes": [
-    {
-      "DownstreamPathTemplate": "/stalker/friends/{username}",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
+    "Routes": [
         {
-          "Host": "localhost",
-          "Port": 44316
-        }
-      ],
+            "DownstreamPathTemplate": "/stalker/friends/{username}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 44316
+                }
+            ],
 
-      "UpstreamPathTemplate": "/stalker/friends/{username}",
-      "UpstreamHttpMethod": [ "GET" ]
-    },
-    {
-      "DownstreamPathTemplate": "/stalker/users/{id}",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
+            "UpstreamPathTemplate": "/stalker/friends/{username}",
+            "UpstreamHttpMethod": [ "GET" ],
+            "SwaggerKey": "stalker"
+        },
         {
-          "Host": "localhost",
-          "Port": 44316
-        }
-      ],
+            "DownstreamPathTemplate": "/stalker/users/{id}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 44316
+                }
+            ],
 
-      "UpstreamPathTemplate": "/stalker/users/{id}",
-      "UpstreamHttpMethod": [ "GET" ]
-    },
-    {
-      "DownstreamPathTemplate": "/stalker/users",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
+            "UpstreamPathTemplate": "/stalker/users/{id}",
+            "UpstreamHttpMethod": [ "GET" ],
+            "SwaggerKey": "stalker"
+        },
         {
-          "Host": "localhost",
-          "Port": 44316
-        }
-      ],
+            "DownstreamPathTemplate": "/stalker/users",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 44316
+                }
+            ],
 
-      "UpstreamPathTemplate": "/stalker/users",
-      "UpstreamHttpMethod": [ "GET" ]
-    },
-    {
-      "DownstreamPathTemplate": "/stalker/tweets",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
+            "UpstreamPathTemplate": "/stalker/users",
+            "UpstreamHttpMethod": [ "GET" ],
+            "SwaggerKey": "stalker"
+        },
         {
-          "Host": "localhost",
-          "Port": 44316
-        }
-      ],
+            "DownstreamPathTemplate": "/stalker/tweets",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 44316
+                }
+            ],
 
-      "UpstreamPathTemplate": "/stalker/tweets",
-      "UpstreamHttpMethod": [ "GET" ]
-    },
-    {
-      "DownstreamPathTemplate": "/tweet-reco",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
+            "UpstreamPathTemplate": "/stalker/tweets",
+            "UpstreamHttpMethod": [ "GET" ],
+            "SwaggerKey": "stalker"
+        },
         {
-          "Host": "localhost",
-          "Port": 44355
-        }
-      ],
+            "DownstreamPathTemplate": "/tweet-reco",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 44355
+                }
+            ],
 
-      "UpstreamPathTemplate": "/tweet-reco",
-      "UpstreamHttpMethod": [ "GET", "POST" ]
-    }
-  ]
+            "UpstreamPathTemplate": "/tweet-reco",
+            "UpstreamHttpMethod": [ "GET", "POST" ],
+            "SwaggerKey": "tweet-reco"
+        }
+    ],
+    "SwaggerEndPoints": [
+        {
+            "Key": "stalker",
+            "Config": [
+                {
+                    "Name": "Stalker API",
+                    "Version": "v1",
+                    "Url": "https://localhost:44316/swagger/v1/swagger.json"
+                }
+            ]
+        },
+        {
+            "Key": "tweet-reco",
+            "Config": [
+                {
+                    "Name": "Tweet-reco API",
+                    "Version": "v1",
+                    "Url": "https://localhost:44355/swagger/v1/swagger.json"
+                }
+            ]
+        }
+    ]
 }
