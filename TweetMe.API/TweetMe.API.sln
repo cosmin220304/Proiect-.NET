@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TweetMe.API", "TweetMe.API\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TweetMe.APIGateway", "TweetMe.APIGateway\TweetMe.APIGateway.csproj", "{29C4D9D5-9538-4D70-AA4F-1B9B7A15BB48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stalker", "Stalker\Stalker.csproj", "{20A76993-70AC-4E9A-9C40-BA8081FDF64E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tweet-Reco", "Tweet-Reco\Tweet-Reco.csproj", "{296FD62F-7DF9-4203-B94B-5BE00596BBA9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{29C4D9D5-9538-4D70-AA4F-1B9B7A15BB48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29C4D9D5-9538-4D70-AA4F-1B9B7A15BB48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29C4D9D5-9538-4D70-AA4F-1B9B7A15BB48}.Release|Any CPU.Build.0 = Release|Any CPU
-		{20A76993-70AC-4E9A-9C40-BA8081FDF64E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{20A76993-70AC-4E9A-9C40-BA8081FDF64E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{20A76993-70AC-4E9A-9C40-BA8081FDF64E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{20A76993-70AC-4E9A-9C40-BA8081FDF64E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{296FD62F-7DF9-4203-B94B-5BE00596BBA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{296FD62F-7DF9-4203-B94B-5BE00596BBA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{296FD62F-7DF9-4203-B94B-5BE00596BBA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{296FD62F-7DF9-4203-B94B-5BE00596BBA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
