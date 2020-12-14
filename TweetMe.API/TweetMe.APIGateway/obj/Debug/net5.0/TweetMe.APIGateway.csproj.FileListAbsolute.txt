@@ -100,3 +100,37 @@ D:\.NET Project\TweetMe.API\TweetMe.APIGateway\obj\Debug\net5.0\TweetMe.APIGatew
 D:\.NET Project\TweetMe.API\TweetMe.APIGateway\obj\Debug\net5.0\ref\TweetMe.APIGateway.dll
 D:\.NET Project\TweetMe.API\TweetMe.APIGateway\obj\Debug\net5.0\TweetMe.APIGateway.pdb
 D:\.NET Project\TweetMe.API\TweetMe.APIGateway\obj\Debug\net5.0\TweetMe.APIGateway.genruntimeconfig.cache
+D:\twitter-dotnet-clone\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\bin\Debug\net5.0\appsettings.Development.json
+D:\twitter-dotnet-clone\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\bin\Debug\net5.0\appsettings.json
+D:\twitter-dotnet-clone\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\bin\Debug\net5.0\ocelot.json
+D:\twitter-dotnet-clone\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\bin\Debug\net5.0\TweetMe.APIGateway.exe
+D:\twitter-dotnet-clone\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\bin\Debug\net5.0\TweetMe.APIGateway.deps.json
+D:\twitter-dotnet-clone\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\bin\Debug\net5.0\TweetMe.APIGateway.runtimeconfig.json
+D:\twitter-dotnet-clone\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\bin\Debug\net5.0\TweetMe.APIGateway.runtimeconfig.dev.json
+D:\twitter-dotnet-clone\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\bin\Debug\net5.0\TweetMe.APIGateway.dll
+D:\twitter-dotnet-clone\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\bin\Debug\net5.0\ref\TweetMe.APIGateway.dll
+D:\twitter-dotnet-clone\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\bin\Debug\net5.0\TweetMe.APIGateway.pdb
+D:\twitter-dotnet-clone\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\bin\Debug\net5.0\FluentValidation.dll
+D:\twitter-dotnet-clone\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\twitter-dotnet-clone\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\bin\Debug\net5.0\Microsoft.AspNetCore.MiddlewareAnalysis.dll
+D:\twitter-dotnet-clone\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\twitter-dotnet-clone\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\bin\Debug\net5.0\Microsoft.Extensions.DiagnosticAdapter.dll
+D:\twitter-dotnet-clone\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\twitter-dotnet-clone\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+D:\twitter-dotnet-clone\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\bin\Debug\net5.0\Ocelot.dll
+D:\twitter-dotnet-clone\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\obj\Debug\net5.0\TweetMe.APIGateway.csprojAssemblyReference.cache
+D:\twitter-dotnet-clone\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\obj\Debug\net5.0\TweetMe.APIGateway.GeneratedMSBuildEditorConfig.editorconfig
+D:\twitter-dotnet-clone\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\obj\Debug\net5.0\TweetMe.APIGateway.AssemblyInfoInputs.cache
+D:\twitter-dotnet-clone\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\obj\Debug\net5.0\TweetMe.APIGateway.AssemblyInfo.cs
+D:\twitter-dotnet-clone\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\obj\Debug\net5.0\TweetMe.APIGateway.csproj.CoreCompileInputs.cache
+D:\twitter-dotnet-clone\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\obj\Debug\net5.0\TweetMe.APIGateway.MvcApplicationPartsAssemblyInfo.cs
+D:\twitter-dotnet-clone\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\obj\Debug\net5.0\TweetMe.APIGateway.MvcApplicationPartsAssemblyInfo.cache
+D:\twitter-dotnet-clone\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\obj\Debug\net5.0\staticwebassets\TweetMe.APIGateway.StaticWebAssets.Manifest.cache
+D:\twitter-dotnet-clone\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\obj\Debug\net5.0\staticwebassets\TweetMe.APIGateway.StaticWebAssets.xml
+D:\twitter-dotnet-clone\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\obj\Debug\net5.0\scopedcss\bundle\TweetMe.APIGateway.styles.css
+D:\twitter-dotnet-clone\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\obj\Debug\net5.0\TweetMe.APIGateway.RazorTargetAssemblyInfo.cache
+D:\twitter-dotnet-clone\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\obj\Debug\net5.0\TweetMe.APIGateway.csproj.CopyComplete
+D:\twitter-dotnet-clone\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\obj\Debug\net5.0\TweetMe.APIGateway.dll
+D:\twitter-dotnet-clone\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\obj\Debug\net5.0\ref\TweetMe.APIGateway.dll
+D:\twitter-dotnet-clone\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\obj\Debug\net5.0\TweetMe.APIGateway.pdb
+D:\twitter-dotnet-clone\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\obj\Debug\net5.0\TweetMe.APIGateway.genruntimeconfig.cache
