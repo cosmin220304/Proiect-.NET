@@ -591,11 +591,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\.NET Project\\TweetMe.API\\TweetMe.API\\TweetMe.API.csproj",
+      "projectUniqueName": "D:\\Proiect-.NET\\TweetMe.API\\TweetMe.API\\TweetMe.API.csproj",
       "projectName": "TweetMe.API",
-      "projectPath": "D:\\.NET Project\\TweetMe.API\\TweetMe.API\\TweetMe.API.csproj",
+      "projectPath": "D:\\Proiect-.NET\\TweetMe.API\\TweetMe.API\\TweetMe.API.csproj",
       "packagesPath": "C:\\Users\\cosmin.aftanase\\.nuget\\packages\\",
-      "outputPath": "D:\\.NET Project\\TweetMe.API\\TweetMe.API\\obj\\",
+      "outputPath": "D:\\Proiect-.NET\\TweetMe.API\\TweetMe.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\cosmin.aftanase\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -664,13 +664,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\.NET Project\\TweetMe.API\\TweetMe.API\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

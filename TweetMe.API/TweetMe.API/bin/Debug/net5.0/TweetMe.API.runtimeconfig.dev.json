@@ -1,13 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-<<<<<<< HEAD
       "C:\\Users\\cosmin.aftanase\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\cosmin.aftanase\\.nuget\\packages"
-=======
-      "C:\\Users\\danie\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\danie\\.nuget\\packages"
->>>>>>> StalkerMicroservice
     ]
   }
 }
