@@ -495,11 +495,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Proiect-.NET\\TweetMe.API\\TweetMe.APIGateway\\TweetMe.APIGateway.csproj",
+      "projectUniqueName": "D:\\.NET Project\\TweetMe.API\\TweetMe.APIGateway\\TweetMe.APIGateway.csproj",
       "projectName": "TweetMe.APIGateway",
-      "projectPath": "D:\\Proiect-.NET\\TweetMe.API\\TweetMe.APIGateway\\TweetMe.APIGateway.csproj",
+      "projectPath": "D:\\.NET Project\\TweetMe.API\\TweetMe.APIGateway\\TweetMe.APIGateway.csproj",
       "packagesPath": "C:\\Users\\cosmin.aftanase\\.nuget\\packages\\",
-      "outputPath": "D:\\Proiect-.NET\\TweetMe.API\\TweetMe.APIGateway\\obj\\",
+      "outputPath": "D:\\.NET Project\\TweetMe.API\\TweetMe.APIGateway\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\cosmin.aftanase\\AppData\\Roaming\\NuGet\\NuGet.Config",

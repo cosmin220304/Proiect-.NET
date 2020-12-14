@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Proiect-.NET\\TweetMe.API\\TweetMe.API\\TweetMe.API.csproj": {}
+    "D:\\.NET Project\\TweetMe.API\\TweetMe.API\\TweetMe.API.csproj": {}
   },
   "projects": {
-    "D:\\Proiect-.NET\\TweetMe.API\\TweetMe.API\\TweetMe.API.csproj": {
+    "D:\\.NET Project\\TweetMe.API\\TweetMe.API\\TweetMe.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Proiect-.NET\\TweetMe.API\\TweetMe.API\\TweetMe.API.csproj",
+        "projectUniqueName": "D:\\.NET Project\\TweetMe.API\\TweetMe.API\\TweetMe.API.csproj",
         "projectName": "TweetMe.API",
-        "projectPath": "D:\\Proiect-.NET\\TweetMe.API\\TweetMe.API\\TweetMe.API.csproj",
+        "projectPath": "D:\\.NET Project\\TweetMe.API\\TweetMe.API\\TweetMe.API.csproj",
         "packagesPath": "C:\\Users\\cosmin.aftanase\\.nuget\\packages\\",
-        "outputPath": "D:\\Proiect-.NET\\TweetMe.API\\TweetMe.API\\obj\\",
+        "outputPath": "D:\\.NET Project\\TweetMe.API\\TweetMe.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cosmin.aftanase\\AppData\\Roaming\\NuGet\\NuGet.Config",
