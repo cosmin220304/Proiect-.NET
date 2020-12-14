@@ -490,19 +490,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\cosmin.aftanase\\.nuget\\packages\\": {}
+    "C:\\Users\\mitit\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\.NET Project\\TweetMe.API\\TweetMe.APIGateway\\TweetMe.APIGateway.csproj",
+      "projectUniqueName": "D:\\Documente\\GitHub Projects\\Proiect-.NET - Copy\\TweetMe.API\\TweetMe.APIGateway\\TweetMe.APIGateway.csproj",
       "projectName": "TweetMe.APIGateway",
-      "projectPath": "D:\\.NET Project\\TweetMe.API\\TweetMe.APIGateway\\TweetMe.APIGateway.csproj",
-      "packagesPath": "C:\\Users\\cosmin.aftanase\\.nuget\\packages\\",
-      "outputPath": "D:\\.NET Project\\TweetMe.API\\TweetMe.APIGateway\\obj\\",
+      "projectPath": "D:\\Documente\\GitHub Projects\\Proiect-.NET - Copy\\TweetMe.API\\TweetMe.APIGateway\\TweetMe.APIGateway.csproj",
+      "packagesPath": "C:\\Users\\mitit\\.nuget\\packages\\",
+      "outputPath": "D:\\Documente\\GitHub Projects\\Proiect-.NET - Copy\\TweetMe.API\\TweetMe.APIGateway\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\cosmin.aftanase\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mitit\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -551,7 +551,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
