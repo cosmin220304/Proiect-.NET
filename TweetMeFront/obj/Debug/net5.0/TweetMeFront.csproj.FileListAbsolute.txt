@@ -637,3 +637,12 @@ D:\Documente\GitHub Projects\Proiect-.NET\TweetMeFront\obj\Debug\net5.0\Razor\Pa
 D:\Documente\GitHub Projects\Proiect-.NET\TweetMeFront\obj\Debug\net5.0\scopedcss\Pages\Popular.razor.rz.scp.css
 D:\Documente\GitHub Projects\Proiect-.NET\TweetMeFront\obj\Debug\net5.0\scopedcss\Pages\Friends.razor.rz.scp.css
 D:\Documente\GitHub Projects\Proiect-.NET\TweetMeFront\obj\Debug\net5.0\scopedcss\Pages\Search.razor.rz.scp.css
+D:\Documente\GitHub Projects\Proiect-.NET\TweetMeFront\bin\Debug\net5.0\wwwroot\_framework\Grpc.Core.dll.gz
+D:\Documente\GitHub Projects\Proiect-.NET\TweetMeFront\bin\Debug\net5.0\wwwroot\_framework\Grpc.Core.Api.dll.gz
+D:\Documente\GitHub Projects\Proiect-.NET\TweetMeFront\bin\Debug\net5.0\wwwroot\_framework\Grpc.Core.dll
+D:\Documente\GitHub Projects\Proiect-.NET\TweetMeFront\bin\Debug\net5.0\wwwroot\_framework\Grpc.Core.Api.dll
+D:\Documente\GitHub Projects\Proiect-.NET\TweetMeFront\obj\Debug\net5.0\build-gz\c22OZokH.gz
+D:\Documente\GitHub Projects\Proiect-.NET\TweetMeFront\obj\Debug\net5.0\build-gz\x+GbqY0E.gz
+D:\Documente\GitHub Projects\Proiect-.NET\TweetMeFront\obj\Debug\net5.0\RazorDeclaration\Pages\SearchResult.razor.g.cs
+D:\Documente\GitHub Projects\Proiect-.NET\TweetMeFront\obj\Debug\net5.0\Razor\Pages\SearchResult.razor.g.cs
+D:\Documente\GitHub Projects\Proiect-.NET\TweetMeFront\obj\Debug\net5.0\scopedcss\Pages\SearchResult.razor.rz.scp.css

@@ -1,12 +1,15 @@
 ﻿@page "/search"
+@inject HttpClient Http
 
 <div class="search-page">
     <p class="search-text">How is the world today?</p>
     <div class="search">
         <EditForm Model=@search OnSubmit=@startSearch>
             <DataAnnotationsValidator />
-            <InputText @bind-Value=search id="search" class="search-box" type="text" placeholder="Search Tweeter.."/>
+            <InputText @bind-Value=search id="search" class="search-box" type="text" placeholder="Search Tweeter.." />
             <input type="submit" class="submit-btn m-0" value="Go" />
         </EditForm>
     </div>
+    
 </div>
+

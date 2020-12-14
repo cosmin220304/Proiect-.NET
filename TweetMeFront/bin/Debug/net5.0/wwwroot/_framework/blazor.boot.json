@@ -7,6 +7,8 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
+      "Grpc.Core.dll": "sha256-727Ks\/QRqsAhLSbs7P5FDvztMLExkNvmteDVFJ8Ln2A=",
+      "Grpc.Core.Api.dll": "sha256-Nm72rzhaCSoLgCpxxMkw9Ei3kooRSrT3SOOreC3ID9Q=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-7P3zpzQg+C+ukPy7fBNY8UW+Ro+yLdvnT6d4iP13FuE=",
       "Microsoft.AspNetCore.Components.dll": "sha256-DcQM9qPOeEovJp5noXBIvP95Jd0SlaW6509d3Ml6xQ4=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-YJaEVhT6VPA0DCgXqRb3thnYFDCDL9x7DMELgmpszb8=",
@@ -195,11 +197,11 @@
       "mscorlib.dll": "sha256-i0zXLOX1XZekwNvRdQK9WDvRWKFggLp7KDCnvMrn+HQ=",
       "netstandard.dll": "sha256-4QNBIB4DMwj82CYd96oFrTh3fcrmyaDjtQ2dBTyWz7Q=",
       "System.Private.CoreLib.dll": "sha256-5Zk+rN+j5FbFEQJdT8YR2O0i6KWpvrERsaPZCv69DmI=",
-      "TweetMeFront.dll": "sha256-\/rATdbEsiLUn2rLJTA8WxNypR+C1KcC1jiiPCR8wo\/Q="
+      "TweetMeFront.dll": "sha256-3ykhaX60HRRIwqXfRMEExnccgs9VSzDUjrknkvXnFR0="
     },
     "lazyAssembly": null,
     "pdb": {
-      "TweetMeFront.pdb": "sha256-2RmE0HV2V77NBNeDvOwtp0Zra5ygeIblu1ukgWBeif0="
+      "TweetMeFront.pdb": "sha256-GMaN07Lxckxj6ujq\/ee3n6a3mLWtnhqYO7aemR+oNfg="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-2ldEe2K8ARFKSIBsv+Hr3iNQzq9qh1H\/dwdu2r+AIyY=",
