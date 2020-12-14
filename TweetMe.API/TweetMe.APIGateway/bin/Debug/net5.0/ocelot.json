@@ -1,17 +1,69 @@
 {
-    "Routes": [
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/stalker/friends/{username}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
         {
-            "DownstreamPathTemplate": "/api/test",
-            "DownstreamScheme": "https",
-            "DownstreamHostAndPorts": [
-                {
-                    "Host": "localhost",
-                    "Port": 44387
-                }
-            ],
-
-            "UpstreamPathTemplate": "/test",
-            "UpstreamHttpMethod": [ "GET" ]
+          "Host": "localhost",
+          "Port": 44316
         }
-    ]
+      ],
+
+      "UpstreamPathTemplate": "/stalker/friends/{username}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/stalker/users/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44316
+        }
+      ],
+
+      "UpstreamPathTemplate": "/stalker/users/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/stalker/users",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44316
+        }
+      ],
+
+      "UpstreamPathTemplate": "/stalker/users",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/stalker/tweets",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44316
+        }
+      ],
+
+      "UpstreamPathTemplate": "/stalker/tweets",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/tweet-reco",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44355
+        }
+      ],
+
+      "UpstreamPathTemplate": "/tweet-reco",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    }
+  ]
 }
