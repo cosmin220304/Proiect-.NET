@@ -7,15 +7,10 @@ import { AuthService } from '../_services/auth.service';
   styleUrls: ['./nav-bar.component.sass']
 })
 export class NavBarComponent implements OnInit {
-  username = "";
 
   constructor(public authService: AuthService) { }
 
   ngOnInit(): void {
-  }
-
-  getUsername(): void{
-    this.username = this.authService.user;
   }
 
 }

@@ -4,6 +4,7 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule,  ReactiveFormsModule }   from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { HttpClientModule } from '@angular/common/http';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { NgModule } from '@angular/core';
 
 
@@ -36,7 +37,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatButtonToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

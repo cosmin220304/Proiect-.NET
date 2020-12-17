@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  gatewayUrl: 'https://localhost:44303'
+  gatewayUrl: 'https://localhost:44303',
+  userApiUrl: 'https://localhost:44331'
 };
 
 /*

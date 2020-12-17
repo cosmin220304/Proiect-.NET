@@ -1,0 +1,137 @@
+@mixin bg-overlay($url, $color, $opacity, $blur)
+    background: linear-gradient(to right, rgba($color, $opacity), rgba($color, $opacity)), url($url)
+    filter: blur($blur)
+
+.profile
+    padding-top: 8em
+    padding-bottom: 3em
+    margin: 0 10em
+    font-family: 'Poppins', 'sans-serif'
+    display: grid
+    grid-template-columns: 70% 30%
+    min-height: 100vh
+
+.bg
+    position: absolute
+    width: 100%
+    height: 100%
+    @include bg-overlay('../../assets/search-background.jpg', #000000, 0.6, 4px)
+    z-index: -1
+    transform: scale(1.1)
+
+.profile-info
+    display: flex
+    margin: 2em 2em
+
+#name
+    color: #ffffff
+
+#username
+    margin-top: 0.3em  
+    color: #2DA7CC
+
+.user-img
+    display: flex
+    flex-direction: column
+    justify-content: center
+    > img
+        width: 48px
+        height: 48px
+        border-radius: 50%
+        margin-right: 1.5em
+
+.user-info
+    display: flex
+    flex-direction: column
+    justify-content: center
+    > p
+        align-self: baseline
+
+.profile-body
+    background-color: rgba(0,0,0, 0.3)
+    margin-right: 2em
+    display: flex
+    flex-direction: column
+
+.prediction
+    margin-left: 1em
+        
+.reco
+    margin: 0 2em
+    display: flex
+    align-items: center
+    color: #2384a1
+    > p
+        margin-right: 1em
+
+.reco-txt
+    margin-right: 0.5em !important
+
+::ng-deep
+    .mat-button-toggle-label-content
+        line-height: 2.5em !important
+        padding: 0.5 !important
+    .mat-button-toggle-button
+        width: 5em !important
+        color: #113d4b !important
+        font-size: 0.8em !important
+        font-family: 'Poppins', 'sans-serif' !important
+    .mat-button-toggle-checked
+        color: black !important
+        background-color: #a3c9d3 !important
+    .mat-button-toggle
+        border: none !important
+
+.tweets
+    margin: 2em 2em
+
+.tweet-img
+    > img
+        width: 48px
+        height: 48px
+        border-radius: 50%
+        // margin: 0.5em 
+        margin-right: 1.5em
+
+.tweet
+   background-color: rgba(0,0,0,0.2)
+   border-radius: 10px
+   padding: 0.5em
+    
+.tweet, .tweet-header
+    color: #dfc9c9
+    position: relative
+    display: flex
+    > p 
+        margin-right: 0.5em
+        margin-bottom: 0.5em
+
+.tweet-bold
+    font-weight: bold
+
+.tweet-accent
+    color: #2f505a
+
+.tweet-badge
+    width: 6em
+    height: 2em
+    border-radius: 50px
+    background-color: rgba(45, 167, 204,0.7)
+    position: absolute
+    top: 90%
+    left: 87%
+    transform: translate(-50%, -50%)
+    display: flex
+    > img
+        margin-top: 0.3em
+        margin-left: 0.5em
+        margin-right: 0.2em
+        justify-self: center
+        width: 20px
+        height: 20px
+    > p
+        margin-top: 0.15em
+        color:  #2f505a
+
+.friends-list
+    background-color: rgba(0,0,0, 0.3)
