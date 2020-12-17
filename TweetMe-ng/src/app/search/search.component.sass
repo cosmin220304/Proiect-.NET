@@ -1,0 +1,64 @@
+@mixin bg-overlay($url, $color, $opacity, $blur) 
+  background: linear-gradient(to right, rgba($color, $opacity), rgba($color, $opacity)), url($url)
+  filter: blur($blur)
+
+.search
+    font-family: 'Poppins', 'sans-serif'
+    display: flex
+    flex-direction: column
+    justify-content: center
+    min-height: 100vh
+
+.bg 
+    position: absolute
+    width: 100%
+    height: 100%
+    @include bg-overlay('../../assets/search-background.jpg', #000000, 0.6, 4px)
+    z-index: -1
+    transform: scale(1.1)
+
+.search-form 
+    padding-top: 1.25em
+    font-family: 'Poppins', 'sans-serif' !important
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+.search-box, .search-result
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+.rectangle, .result-btns, .result
+    display: flex
+    justify-content: center
+
+::ng-deep 
+    .mat-hint
+        color: #09B0C8 !important
+    .mat-form-field-infix
+        border-bottom: solid 0.1em #09B0C8  !important
+
+.search-btn
+    margin: 0 !important
+    width: 19em !important
+
+.user-info
+    color: white
+
+#username
+    color: #486a70
+    margin-top: 0.3em
+
+#user-img
+    display: flex
+    flex-direction: column
+    justify-content: center
+    > img
+        width: 50px
+        height: 50px
+        border-radius: 50%
+        margin-right: 1.5em
+
+#id
+    margin-right: 0.5em

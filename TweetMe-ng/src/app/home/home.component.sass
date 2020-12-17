@@ -1,0 +1,15 @@
+@mixin bg-overlay($url, $color, $opacity) 
+  background: linear-gradient(to right, rgba($color, $opacity), rgba($color, $opacity)), url($url)
+
+    
+.home
+  display: flex
+  flex-direction: column
+  justify-content: center
+  padding: 5em 3em 0 3em
+  @include bg-overlay('../../assets/home-background.jpg', #000000, 0.6)
+  min-height: 100vh
+
+.home-btns
+  display: flex
+  justify-content: center

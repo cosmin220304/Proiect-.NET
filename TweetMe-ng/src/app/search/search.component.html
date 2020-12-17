@@ -1,0 +1,33 @@
+<div class="bg"></div>
+<div class="search" *ngIf="this.showSearchBar">
+    <p class="tweet-me-text">How is the world today?</p>
+    <div class="rectangle">
+        <div class="search-form">
+            <form [formGroup]="searchForm" class="search-box" (ngSubmit)="startSearch()">
+                <mat-form-field class="search-input">
+                    <input matInput [formControl]="username" >
+                </mat-form-field>  
+                <button mat-raised-button type="submit" [disabled]="searchForm.invalid" class="tweet-me-btn tweet-me-primary-btn search-btn">Search by username</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="search" *ngIf="!this.showSearchBar">
+    <p class="tweet-me-text">Search result:</p>
+    <div class="search-result mt-3">
+        <div class="result">
+            <div id="user-img">
+                <img src="{{this.searchResult.imageUrl}}" >
+            </div>
+            <div class="user-info">
+                <p id="name">{{this.searchResult.name}}</p>
+                <p id="username">@{{this.searchResult.username}}</p>
+            </div>
+        </div>
+        <div class="result-btns mt-5">
+            <button mat-raised-button class="tweet-me-btn tweet-me-primary-btn" [routerLink]="['/profile']" [queryParams]="{'username': this.searchResult.username}">See profile</button>
+            <button mat-raised-button class="tweet-me-btn tweet-me-accent-btn" (click)="resetSearch()">Another search</button>
+        </div>
+    </div>
+</div>
+

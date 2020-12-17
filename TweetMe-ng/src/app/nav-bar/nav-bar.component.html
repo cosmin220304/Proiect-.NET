@@ -1,0 +1,9 @@
+<div class="nav-bar d-flex justify-content-between align-items-center">
+    <a class="logo" [routerLink]="['']">TweetMe</a>
+    <div class="navigation d-flex justify-content-between">
+        <a mat-flat-button [routerLink]="['search']">Search</a>
+        <a mat-flat-button [routerLink]="['popular']">Popular</a>
+        <a mat-flat-button [routerLink]="['friends']" [queryParams]="{'username':  this.authService.user}" *ngIf="authService.loggedIn()">Friends</a>
+        <a mat-flat-button [routerLink]="['profile']"  [queryParams]="{'username':  this.authService.user}" *ngIf="authService.loggedIn()">Profile</a>
+    </div>
+</div>
