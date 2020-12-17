@@ -1,2 +1,2 @@
-# Proiect-.NET  - Blazer Frontend
+# Proiect-.NET  - Angular Frontend
 
