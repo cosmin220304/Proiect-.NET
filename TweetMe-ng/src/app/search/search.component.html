@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="result-btns mt-5">
-            <button mat-raised-button class="tweet-me-btn tweet-me-primary-btn" [routerLink]="['/profile']" [queryParams]="{'username': this.searchResult.username}">See profile</button>
+            <button mat-raised-button class="tweet-me-btn tweet-me-primary-btn" [routerLink]="['/search-profile']" [queryParams]="{'username': this.searchResult.username}">See profile</button>
             <button mat-raised-button class="tweet-me-btn tweet-me-accent-btn" (click)="resetSearch()">Another search</button>
         </div>
     </div>

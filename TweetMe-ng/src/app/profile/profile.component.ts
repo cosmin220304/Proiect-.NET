@@ -1,9 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Profile } from '../_models/profile';
 import { User } from '../_models/user';
-import { AuthService } from '../_services/auth.service';
 import { ProfilerService } from '../_services/profiler.service';
 import { StalkerService } from '../_services/stalker.service';
+import { Tweet } from '../_models/tweet';
+import { ActivatedRoute } from '@angular/router';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-profile',
@@ -11,7 +13,9 @@ import { StalkerService } from '../_services/stalker.service';
   styleUrls: ['./profile.component.sass']
 })
 export class ProfileComponent implements OnInit {
+  readyToShow = 0;
   friendList: User[]  = [];
+  tweets: Tweet[] = [];
   profile : Profile = {
     id: 0,
     name: '',
@@ -19,22 +23,85 @@ export class ProfileComponent implements OnInit {
     imageUrl: '',
     tweets: []
   };
-  sort:string = "week";
-  prediction: number = 90;
+  user: string;
+  sort:string = "day";
+  prediction: number;
   
-  constructor(private profiler: ProfilerService, private auth: AuthService, private stalker: StalkerService) { }
+  constructor(private profiler: ProfilerService, private stalker: StalkerService, private activatedRoute: ActivatedRoute) {
+    this.activatedRoute.queryParams.subscribe(params => {
+      this.user = params['username'];
+      console.log(this.user); 
+  });
+  }
 
   ngOnInit():void {
-    this.profiler.getProfile(this.auth.getLoggedUser(), 3)
+    this.profiler.getProfile(this.user, 50)
       .subscribe(
-        res => this.profile = res,
+        res => {
+          this.profile = res;
+          this.sortTweetsByDate();
+        },
         err => alert(err)
       );
-    // this.stalker.getFriends(this.auth.getLoggedUser())
-    //   .subscribe(
-    //     res => this.friendList = res,
-    //     err => alert(err)
-    //   );
-    console.log(this.sort);
+    this.stalker.getFriends(this.user)
+      .subscribe(
+        res => {this.friendList = res;
+          console.log(this.friendList);
+          this.readyToShow += 1;
+        },
+        err => alert(err)
+      );
+  }
+
+  sortTweetsByDate(){
+    var date =  new Date().toString().slice(0,10);    
+    var days = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+    this.tweets = [];
+    this.profile.tweets.forEach(tweet => {
+      if(this.sort === 'day'){
+        if (tweet.data.includes(date)){
+          this.tweets.push(tweet);
+        }
+      }
+      if(this.sort === 'week'){
+        var dayOfWeek = days.indexOf(date.slice(0,3));
+        var day = parseInt(date.slice(8,10));
+        var firstDayOfWeek = day - dayOfWeek;
+        var lastDayOfWeek = day + (days.indexOf('Sun') - dayOfWeek);
+        if (tweet.data.includes(date.slice(3,6)))
+          if (parseInt(tweet.data.slice(8,10)) >= firstDayOfWeek && parseInt(tweet.data.slice(8,10)) <= lastDayOfWeek){
+            this.tweets.push(tweet);
+          }
+      }
+      if(this.sort === 'month'){
+        if (tweet.data.includes(date.slice(3,6))){
+          this.tweets.push(tweet);
+        }
+      }
+    });
+    this.getPrediction();
+  }
+
+  getPrediction(){
+    var happyTweetsCount = 1;
+    this.tweets.forEach(tweet => {
+      if (tweet.sentiment === 1){
+        happyTweetsCount += 1;
+      }
+    });
+    if (happyTweetsCount === 0){
+      this.prediction = 0;
+    }
+    else{
+      this.prediction = ~~((happyTweetsCount / this.tweets.length) * 100) % 100;
+    }
+    if (this.readyToShow < 2){
+      this.readyToShow += 1;
+    }
+  }
+
+  seeFriendProfile(username: string){
+    let url = window.location.href.split('/')[0]; 
+    window.location.replace(url + '/friend-profile?username=' + username);
   }
 }

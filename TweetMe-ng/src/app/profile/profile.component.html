@@ -1,53 +1,67 @@
 <div class="bg"></div>
-<div class="profile">
+<div class="profile" *ngIf="this.readyToShow === 2">
     <div class="profile-body">
         <div class="profile-info">
             <div class="user-img">
                 <img src="{{this.profile.imageUrl}}">
             </div>
             <div class="user-info">
-                <p id="name">{{this.profile.name}}</p>
-                <p id="username">@{{this.profile.username}}</p>
+                <p class="name">{{this.profile.name}}</p>
+                <p class="username">@{{this.profile.username}}</p>
             </div>
         </div>
-        <div class="profile-tweets">
+        <div class="profile-tweets mr-4">
             <div class="reco">
                 <p class="reco-txt">Prediction:</p>
                 <p>This</p>
-                <mat-button-toggle-group [(ngModel)]="this.sort">
+                <mat-button-toggle-group [(ngModel)]="this.sort" (click)="sortTweetsByDate()">
                     <mat-button-toggle value="day" ngDefaultControl>day</mat-button-toggle>
                     <mat-button-toggle value="week" ngDefaultControl>week</mat-button-toggle>
                     <mat-button-toggle value="month" ngDefaultControl>month</mat-button-toggle>
                 </mat-button-toggle-group>
                 <p class="prediction">you were {{this.prediction}}% happy</p>
             </div>
-            <div class="tweets" *ngFor="let tweet of this.profile.tweets">
-                <div class="tweet">
-                    <span class="tweet-badge">
-                        <img src="../../assets/happy.png" *ngIf="tweet.sentiment === 1">
-                        <p *ngIf="tweet.sentiment === 1">happy</p>
-                        <img src="../../assets/sad.png" *ngIf="tweet.sentiment === 0">
-                        <p *ngIf="tweet.sentiment === 0">sad</p>
-                    </span>
-                    <div class="tweet-img">
-                        <img src="{{this.profile.imageUrl}}">
-                    </div>
-                    <div class="tweet-data">
-                        <div class="tweet-header">
-                            <p class="tweet-bold">{{this.profile.name}}</p>
-                            <p class="tweet-accent">@{{this.profile.username}}</p>
-                            <p class="tweet-accent">·</p>
-                            <p class="tweet-accent">{{tweet.data}}</p>
-                        </div>
-                        <span class="tweet-body">
-                            {{tweet.text}}
+            <div class="tweets-scorllbar" *ngIf="this.tweets.length > 0">
+                <div class="tweets" *ngFor="let tweet of this.tweets">
+                    <div class="tweet">
+                        <span class="tweet-badge">
+                            <img src="../../assets/happy.png" *ngIf="tweet.sentiment === 1">
+                            <p *ngIf="tweet.sentiment === 1">happy</p>
+                            <img src="../../assets/sad.png" *ngIf="tweet.sentiment === 0">
+                            <p *ngIf="tweet.sentiment === 0">sad</p>
                         </span>
+                        <div class="tweet-img">
+                            <img src="{{this.profile.imageUrl}}">
+                        </div>
+                        <div class="tweet-data">
+                            <div class="tweet-header">
+                                <p class="tweet-bold">{{this.profile.name}}</p>
+                                <p class="tweet-accent">@{{this.profile.username}}</p>
+                                <p class="tweet-accent">·</p>
+                                <p class="tweet-accent">{{tweet.data.slice(0,10) + ' ' + tweet.data.slice(26,30)}}</p>
+                            </div>
+                            <span class="tweet-body">
+                                {{tweet.text}}
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
+            <p class="no-tweets" *ngIf="this.tweets.length === 0">No tweets this {{this.sort}}</p>
         </div>
     </div>
     <div class="friends-list">
-        same
+        <div *ngFor="let friend of this.friendList">
+            <div class="friend" *ngIf="this.friendList.indexOf(friend) <= 5" (click)="seeFriendProfile(friend.username)">
+                <div class="user-img" >
+                    <img src="{{friend.imageUrl}}">
+                </div>
+                <div class="user-info">
+                    <p class="name">{{friend.name}}</p>
+                    <p class="username">@{{friend.username}}</p>
+                </div>
+            </div>
+        </div>
+        <button mat-raised-button class="tweet-me-btn tweet-me-accent-btn" [routerLink]="['/friends']" [queryParams]="{'username':  this.user}">See all</button>
     </div>
 </div>

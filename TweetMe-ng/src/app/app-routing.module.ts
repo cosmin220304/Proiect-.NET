@@ -11,7 +11,9 @@ const routes: Routes = [
   { path: 'search', component: SearchComponent },
   { path: 'popular', component: PopularComponent },
   { path: 'friends', component: FriendsComponent },
-  { path: 'profile', component: ProfileComponent }
+  { path: 'profile', component: ProfileComponent },
+  { path: 'friend-profile', component: ProfileComponent },
+  { path: 'search-profile', component: ProfileComponent }
 ];
 
 @NgModule({
