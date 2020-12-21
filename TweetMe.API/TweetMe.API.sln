@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TweetMe.APIGateway", "Tweet
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stalker", "Stalker\Stalker.csproj", "{20A76993-70AC-4E9A-9C40-BA8081FDF64E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tweet-Reco", "Tweet-Reco\Tweet-Reco.csproj", "{2994A925-CD32-4BE5-A0E0-CE422EE9ED8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tweet-Reco", "Tweet-Reco\Tweet-Reco.csproj", "{2994A925-CD32-4BE5-A0E0-CE422EE9ED8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeProfiler", "MeProfiles\MeProfiler.csproj", "{92B98853-B53E-4590-A080-60ADBBD7433D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeProfiler", "MeProfiles\MeProfiler.csproj", "{92B98853-B53E-4590-A080-60ADBBD7433D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweetFinder", "TweetFinder\TweetFinder.csproj", "{BC046E0C-202A-4AEE-933E-151926DD17B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{92B98853-B53E-4590-A080-60ADBBD7433D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92B98853-B53E-4590-A080-60ADBBD7433D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92B98853-B53E-4590-A080-60ADBBD7433D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC046E0C-202A-4AEE-933E-151926DD17B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC046E0C-202A-4AEE-933E-151926DD17B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC046E0C-202A-4AEE-933E-151926DD17B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC046E0C-202A-4AEE-933E-151926DD17B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
