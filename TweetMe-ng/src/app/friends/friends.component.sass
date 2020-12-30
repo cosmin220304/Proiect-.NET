@@ -1,0 +1,79 @@
+@mixin bg-overlay($url, $color, $opacity, $blur)
+    background: linear-gradient(to right, rgba($color, $opacity), rgba($color, $opacity)), url($url)
+    filter: blur($blur)
+    
+.friends
+    padding-top: 7em
+    padding-bottom: 3em
+    margin: 0 10em
+    font-family: 'Poppins', 'sans-serif'
+    display: grid
+    grid-template-rows: 10% 90%
+    min-height: 100vh
+
+.bg
+    position: absolute
+    width: 100%
+    height: 100%
+    @include bg-overlay('../../assets/search-background.jpg', #000000, 0.6, 4px)
+    z-index: -1
+    transform: scale(1.1)
+
+.by-feelings
+    margin: 0 2em
+    margin-bottom: 0.5em
+    display: flex
+    justify-content: center
+    color: #2384a1
+    > p
+        margin-right: 0.5em
+    
+.selected-fr
+    color: #2DA7CC
+    font-weight: bold
+
+.not-selected-fr
+    color:  rgba(45, 167, 204,0.5)
+
+.friends-body
+    background-color: rgba(0,0,0, 0.3)
+    display: flex
+    justify-content: center
+    overflow-y: auto
+    overflow-x: hidden
+    padding-top: 2em
+    padding-left: 2em
+    padding-bottom: 2em
+
+.friends-scroll
+    width: 100%
+    height: 500px
+    display: grid
+    grid-template-columns: repeat(auto-fit , 30.5% )
+    grid-gap: 2em
+
+.friend
+    background-color: rgba(0,0,0, 0.3)
+    border-radius: 5px
+    display: flex
+    flex-direction: column
+    color: #2DA7CC
+    padding: 1em 0.5em
+    > *
+        display: flex
+        justify-content: center
+    > .image
+        > img
+            width: 3em
+            height: 3em
+            border-radius: 50%
+            margin-bottom: 0.5em
+    > .id
+        color: #486a70
+    > .name
+        color: white
+            
+.no-friends-txt
+    align-self: center
+    font-size: 1.5em
+    color:  rgba(45, 167, 204,0.5)

@@ -1,1 +1,43 @@
-<p>popular works!</p>
+<div class="bg"></div>
+<div class="popular">
+    <div class="header">
+        <p class="reco-txt">What you see now: </p>
+        <p>Most searched </p>
+        <p [ngClass]="(this.popular == 'profiles')?'selected-p':'not-selected-p'" (click)="getPopular('profiles')">profiles</p>
+        <p [ngClass]="(this.popular == 'tweets')?'selected-p':'not-selected-p'" (click)="getPopular('tweets')">tweets</p>
+    </div>
+    <div class="popular-body">
+        <div class="popular-profiles-scroll" *ngIf="this.popular === 'profiles'">
+            <div class="profile" *ngFor="let profile of this.profiles" (click)="seeProfile(profile.username)">
+                <div class="image">
+                    <img src="{{profile.imageUrl}}">
+                </div>
+                <p class="id">id: {{profile.id}}</p>
+                <p class="username">@{{profile.username}}</p>
+                <p class="name">{{profile.name}}</p>
+            </div>
+        </div>
+        <div class="popular-tweets-scroll" *ngIf="this.popular === 'tweets'">
+            <div class="tweets" *ngFor="let tweet of this.tweets">
+                <div class="tweet">
+                    <span class="tweet-badge">
+                        <img src="../../assets/happy.png" *ngIf="tweet.sentiment === 1">
+                        <p *ngIf="tweet.sentiment === 1">happy</p>
+                        <img src="../../assets/sad.png" *ngIf="tweet.sentiment === 0">
+                        <p *ngIf="tweet.sentiment === 0">sad</p>
+                    </span>
+                    <div class="tweet-data">
+                        <div class="tweet-header">
+                            <p class="tweet-accent">{{tweet.id}}</p>
+                            <p class="tweet-accent">·</p>
+                            <p class="tweet-accent">{{tweet.data.slice(0,10) + ' ' + tweet.data.slice(26,30)}}</p>
+                        </div>
+                        <span class="tweet-body">
+                            {{tweet.text}}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

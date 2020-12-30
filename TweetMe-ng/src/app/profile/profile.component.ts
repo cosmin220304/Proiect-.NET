@@ -1,11 +1,10 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Profile } from '../_models/profile';
 import { User } from '../_models/user';
 import { ProfilerService } from '../_services/profiler.service';
 import { StalkerService } from '../_services/stalker.service';
 import { Tweet } from '../_models/tweet';
 import { ActivatedRoute } from '@angular/router';
-import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-profile',
@@ -26,20 +25,23 @@ export class ProfileComponent implements OnInit {
   user: string;
   sort:string = "day";
   prediction: number;
+  setPrediction = 0;
+  ts:string = "all";
   
   constructor(private profiler: ProfilerService, private stalker: StalkerService, private activatedRoute: ActivatedRoute) {
     this.activatedRoute.queryParams.subscribe(params => {
       this.user = params['username'];
       console.log(this.user); 
-  });
+    });
   }
 
   ngOnInit():void {
     this.profiler.getProfile(this.user, 50)
       .subscribe(
         res => {
+          console.log(res.tweets);
           this.profile = res;
-          this.sortTweetsByDate();
+          this.sortTweetsByDate(this.ts);
         },
         err => alert(err)
       );
@@ -53,7 +55,23 @@ export class ProfileComponent implements OnInit {
       );
   }
 
-  sortTweetsByDate(){
+  changeTweetsSelector(select: string){
+    this.ts = select;
+    console.log(this.ts);
+    if(this.ts === 'happy'){
+      this.tweets = this.tweets.filter(t => t.sentiment === 1);
+      this.prediction = 100;
+    }
+    else{
+      this.tweets = this.tweets.filter(t => t.sentiment === 0);
+      this.prediction = 0;
+    }
+    if (this.readyToShow < 2){
+      this.readyToShow += 1;
+    }
+  }
+
+  sortTweetsByDate(select: string){
     var date =  new Date().toString().slice(0,10);    
     var days = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
     this.tweets = [];
@@ -79,7 +97,13 @@ export class ProfileComponent implements OnInit {
         }
       }
     });
-    this.getPrediction();
+    if(select !== 'all'){
+      this.changeTweetsSelector(select);
+    }
+    else{
+      this.ts = select;
+      this.getPrediction();
+    }
   }
 
   getPrediction(){
@@ -104,4 +128,6 @@ export class ProfileComponent implements OnInit {
     let url = window.location.href.split('/')[0]; 
     window.location.replace(url + '/friend-profile?username=' + username);
   }
+
+  
 }

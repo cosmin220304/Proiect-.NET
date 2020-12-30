@@ -13,7 +13,6 @@ export class ProfilerService {
   constructor(private http: HttpClient) { }
 
   getProfile(username: string, count: number){
-    console.log(username);
     return this.http.get<Profile>(this.profileGatewayUrl + '/user?username=' + username + '&count=' + count);
   }
 }

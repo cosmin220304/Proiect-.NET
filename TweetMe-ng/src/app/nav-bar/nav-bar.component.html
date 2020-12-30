@@ -4,6 +4,6 @@
         <a mat-flat-button [routerLink]="['search']">Search</a>
         <a mat-flat-button [routerLink]="['popular']">Popular</a>
         <a mat-flat-button [routerLink]="['friends']" [queryParams]="{'username':  this.authService.getLoggedUser()}" *ngIf="authService.loggedIn()">Friends</a>
-        <a mat-flat-button [routerLink]="['profile']"  [queryParams]="{'username':  this.authService.getLoggedUser()}" *ngIf="authService.loggedIn()">Profile</a>
+        <a mat-flat-button [routerLink]="['profile']" [queryParams]="{'username':  this.authService.getLoggedUser()}" *ngIf="authService.loggedIn()">Profile</a>
     </div>
 </div>

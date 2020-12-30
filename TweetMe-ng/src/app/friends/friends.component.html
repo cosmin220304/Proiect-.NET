@@ -1,1 +1,25 @@
-<p>friends works!</p>
+<div class="bg"></div>
+<div class="friends">
+    <div class="by-feelings fr-selectors">
+        <p class="reco-txt">What you see now:</p>
+        <p [ngClass]="(this.fs == 'all')?'selected-fr':'not-selected-fr'" (click)="sortFriendsByFeelings('all')">all</p>
+        <p [ngClass]="(this.fs == 'happy')?'selected-fr':'not-selected-fr'" (click)="sortFriendsByFeelings('happy')">
+            happy
+        </p>
+        <p [ngClass]="(this.fs == 'sad')?'selected-fr':'not-selected-fr'" (click)="sortFriendsByFeelings('sad')">sad</p>
+        <p class="reco-txt">friends</p>
+    </div>
+    <div class="friends-body">
+        <div class="friends-scroll" *ngIf="this.friends.length !== 0">
+           <div class="friend" *ngFor="let friend of this.friends" (click)="seeFriendProfile(friend.username)">
+               <div class="image">
+                   <img src="{{friend.imageUrl}}">
+               </div>
+               <p class="id">id: {{friend.id}}</p>
+               <p class="username">@{{friend.username}}</p>
+               <p class="name">{{friend.name}}</p>
+           </div>
+        </div>
+        <p class="no-friends-txt" *ngIf="this.friends.length === 0">No friends found</p>
+    </div>
+</div>

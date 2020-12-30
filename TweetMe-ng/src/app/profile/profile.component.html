@@ -11,10 +11,17 @@
             </div>
         </div>
         <div class="profile-tweets mr-4">
+            <div class="feelings-sort reco">
+                <p class="reco-txt">What you see now:</p>
+                <p [ngClass]="(this.ts == 'all')?'selected-tw':'not-selected-tw'" (click)="sortTweetsByDate('all')">all</p>
+                <p [ngClass]="(this.ts == 'happy')?'selected-tw':'not-selected-tw'" (click)="sortTweetsByDate('happy')">happy</p>
+                <p [ngClass]="(this.ts == 'sad')?'selected-tw':'not-selected-tw'" (click)="sortTweetsByDate('sad')">sad</p>
+                <p class="reco-txt">tweets</p>
+            </div>
             <div class="reco">
                 <p class="reco-txt">Prediction:</p>
                 <p>This</p>
-                <mat-button-toggle-group [(ngModel)]="this.sort" (click)="sortTweetsByDate()">
+                <mat-button-toggle-group [(ngModel)]="this.sort" (click)="sortTweetsByDate(this.ts)">
                     <mat-button-toggle value="day" ngDefaultControl>day</mat-button-toggle>
                     <mat-button-toggle value="week" ngDefaultControl>week</mat-button-toggle>
                     <mat-button-toggle value="month" ngDefaultControl>month</mat-button-toggle>
@@ -47,7 +54,8 @@
                     </div>
                 </div>
             </div>
-            <p class="no-tweets" *ngIf="this.tweets.length === 0">No tweets this {{this.sort}}</p>
+            <p class="no-tweets" *ngIf="this.tweets.length === 0 && this.ts === 'all'">No tweets this {{this.sort}}</p>
+            <p class="no-tweets" *ngIf="this.tweets.length === 0 && this.ts !== 'all'">No {{this.ts}} tweets this {{this.sort}}</p>        
         </div>
     </div>
     <div class="friends-list">
