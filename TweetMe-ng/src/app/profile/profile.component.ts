@@ -5,6 +5,7 @@ import { ProfilerService } from '../_services/profiler.service';
 import { StalkerService } from '../_services/stalker.service';
 import { Tweet } from '../_models/tweet';
 import { ActivatedRoute } from '@angular/router';
+import { ProgressSpinnerMode } from '@angular/material/progress-spinner';
 
 @Component({
   selector: 'app-profile',
@@ -27,6 +28,10 @@ export class ProfileComponent implements OnInit {
   prediction: number;
   setPrediction = 0;
   ts:string = "all";
+
+  color: 'red';
+  mode: ProgressSpinnerMode = 'indeterminate';
+  value = 50;
   
   constructor(private profiler: ProfilerService, private stalker: StalkerService, private activatedRoute: ActivatedRoute) {
     this.activatedRoute.queryParams.subscribe(params => {
@@ -48,8 +53,7 @@ export class ProfileComponent implements OnInit {
     this.stalker.getFriends(this.user)
       .subscribe(
         res => {this.friendList = res;
-          console.log(this.friendList);
-          this.readyToShow += 1;
+          this.cutNames();
         },
         err => alert(err)
       );
@@ -129,5 +133,18 @@ export class ProfileComponent implements OnInit {
     window.location.replace(url + '/friend-profile?username=' + username);
   }
 
+  cutNames(){
+    this.friendList.forEach(user => {
+      var shortName = user.name.split(' ');
+      if(shortName.length > 2){
+        if(user.name.length > 16){
+          user.name = shortName[0] + ' ' + shortName[1];
+          console.log(user.name);
+        }
+      }
+    });
+    console.log(this.friendList);
+    this.readyToShow += 1;
+  }
   
 }

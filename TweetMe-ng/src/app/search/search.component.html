@@ -8,6 +8,8 @@
                     <input matInput [formControl]="username" >
                 </mat-form-field>  
                 <button mat-raised-button type="submit" [disabled]="searchForm.invalid" class="tweet-me-btn tweet-me-primary-btn search-btn">Search by username</button>
+                <!-- <button mat-raised-button type="submit" [disabled]="searchForm.invalid" class="tweet-me-btn tweet-me-primary-btn search-btn search-tweet-btn">Search tweet by id</button> -->
+                <p class="not-found-txt" *ngIf="this.notFound === 1">No result found</p>
             </form>
         </div>
     </div>

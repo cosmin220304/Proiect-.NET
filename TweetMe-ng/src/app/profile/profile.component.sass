@@ -2,6 +2,16 @@
     background: linear-gradient(to right, rgba($color, $opacity), rgba($color, $opacity)), url($url)
     filter: blur($blur)
 
+.spinner-container
+    > .spinner
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+
+:host ::ng-deep .spinner circle
+    stroke: #2DA7CC
+ 
 .profile
     padding-top: 7em
     padding-bottom: 3em
@@ -155,6 +165,8 @@
     display: flex
     flex-direction: column
     overflow: hidden
+    justify-content: space-between
+    padding-bottom: 1em
 
 .friend
     display: flex
@@ -162,8 +174,6 @@
 
 .tweet-me-btn
     width: 95% !important
-    justify-self: center
-    justify-content: baseline
 
 .selected-tw
     color: #2DA7CC

@@ -7,7 +7,9 @@
         <p [ngClass]="(this.popular == 'tweets')?'selected-p':'not-selected-p'" (click)="getPopular('tweets')">tweets</p>
     </div>
     <div class="popular-body">
-        <div class="popular-profiles-scroll" *ngIf="this.popular === 'profiles'">
+        <p class="no-popular-txt" *ngIf="this.profiles.length === 0 && this.popular === 'profiles'">No popular profiles found</p>
+        <p class="no-popular-txt" *ngIf="this.tweets.length === 0 && this.popular === 'tweets'">No popular tweets found</p>
+        <div class="popular-profiles-scroll" *ngIf="this.popular === 'profiles' && this.profiles.length != 0">
             <div class="profile" *ngFor="let profile of this.profiles" (click)="seeProfile(profile.username)">
                 <div class="image">
                     <img src="{{profile.imageUrl}}">
@@ -17,7 +19,7 @@
                 <p class="name">{{profile.name}}</p>
             </div>
         </div>
-        <div class="popular-tweets-scroll" *ngIf="this.popular === 'tweets'">
+        <div class="popular-tweets-scroll" *ngIf="this.popular === 'tweets' && this.tweets.length != 0">
             <div class="tweets" *ngFor="let tweet of this.tweets">
                 <div class="tweet">
                     <span class="tweet-badge">

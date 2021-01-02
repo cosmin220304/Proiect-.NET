@@ -15,6 +15,7 @@ export class SearchComponent implements OnInit {
   username = new FormControl();
   showSearchBar = true;
   searchResult: User;
+  notFound = 0;
 
   constructor(fb: FormBuilder, private stalker: StalkerService) {
     this.searchForm = fb.group({
@@ -30,11 +31,11 @@ export class SearchComponent implements OnInit {
     this.stalker.getUser(this.username.value)
       .subscribe(
         res => {
-          console.log(res);
           if (res.name === null){
-            console.log('No user found');
+            this.notFound = 1;
           }
           else{
+            this.notFound = 0;
             this.searchResult = res;
             this.showSearchBar = !this.showSearchBar;
           }

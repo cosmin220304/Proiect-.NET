@@ -1,5 +1,6 @@
 <div class="bg"></div>
-<div class="friends">
+<div class="spinner-container"><mat-spinner *ngIf="this.readyToShow === 0" class="spinner"></mat-spinner></div>
+<div class="friends" *ngIf="this.readyToShow === 1">
     <div class="by-feelings fr-selectors">
         <p class="reco-txt">What you see now:</p>
         <p [ngClass]="(this.fs == 'all')?'selected-fr':'not-selected-fr'" (click)="sortFriendsByFeelings('all')">all</p>
