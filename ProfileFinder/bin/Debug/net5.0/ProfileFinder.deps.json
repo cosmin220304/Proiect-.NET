@@ -23,7 +23,7 @@
   },
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "TweetFinder/1.0.0": {
+      "ProfileFinder/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": "5.0.0",
           "Microsoft.AspNetCore.Authentication.OpenIdConnect": "5.0.0",
@@ -314,10 +314,10 @@
           "WindowsBase": "4.0.0.0"
         },
         "runtime": {
-          "TweetFinder.dll": {}
+          "ProfileFinder.dll": {}
         },
         "compile": {
-          "TweetFinder.dll": {}
+          "ProfileFinder.dll": {}
         }
       },
       "Microsoft.AspNetCore.Authentication.JwtBearer/5.0.0": {
@@ -2968,7 +2968,7 @@
     }
   },
   "libraries": {
-    "TweetFinder/1.0.0": {
+    "ProfileFinder/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documente\\FII\\Anul III sem I\\.NET\\Project\\Proiect-.NET-main\\TweetMe.API\\TweetFinder\\TweetFinder.csproj": {}
+    "D:\\Documente\\GitHub Projects\\Proiect-.NET\\ProfileFinder\\ProfileFinder.csproj": {}
   },
   "projects": {
-    "D:\\Documente\\FII\\Anul III sem I\\.NET\\Project\\Proiect-.NET-main\\TweetMe.API\\TweetFinder\\TweetFinder.csproj": {
+    "D:\\Documente\\GitHub Projects\\Proiect-.NET\\ProfileFinder\\ProfileFinder.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documente\\FII\\Anul III sem I\\.NET\\Project\\Proiect-.NET-main\\TweetMe.API\\TweetFinder\\TweetFinder.csproj",
-        "projectName": "TweetFinder",
-        "projectPath": "D:\\Documente\\FII\\Anul III sem I\\.NET\\Project\\Proiect-.NET-main\\TweetMe.API\\TweetFinder\\TweetFinder.csproj",
+        "projectUniqueName": "D:\\Documente\\GitHub Projects\\Proiect-.NET\\ProfileFinder\\ProfileFinder.csproj",
+        "projectName": "ProfileFinder",
+        "projectPath": "D:\\Documente\\GitHub Projects\\Proiect-.NET\\ProfileFinder\\ProfileFinder.csproj",
         "packagesPath": "C:\\Users\\mitit\\.nuget\\packages\\",
-        "outputPath": "D:\\Documente\\FII\\Anul III sem I\\.NET\\Project\\Proiect-.NET-main\\TweetMe.API\\TweetFinder\\obj\\",
+        "outputPath": "D:\\Documente\\GitHub Projects\\Proiect-.NET\\ProfileFinder\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mitit\\AppData\\Roaming\\NuGet\\NuGet.Config",

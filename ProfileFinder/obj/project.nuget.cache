@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1DEk3ilNKnn7wxETXiQKkhlsYSn4vt2MU7rbYToiuVpULOAnETkfFfFt1CdFX1JGSvfLuqDqmBrIsk4dQrpWWQ==",
+  "dgSpecHash": "w7W0kq06guWPjclc/fN+K3G/HWSqQJY7Q+kcPL3RJWyeMrpixTVTPyF3RgY8p2/nlzKKplThc9ftpYtfyiAc5A==",
   "success": true,
-  "projectFilePath": "D:\\Documente\\FII\\Anul III sem I\\.NET\\Project\\Proiect-.NET-main\\TweetMe.API\\TweetFinder\\TweetFinder.csproj",
+  "projectFilePath": "D:\\Documente\\GitHub Projects\\Proiect-.NET\\ProfileFinder\\ProfileFinder.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mitit\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.0\\microsoft.aspnetcore.authentication.jwtbearer.5.0.0.nupkg.sha512",
     "C:\\Users\\mitit\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\5.0.0\\microsoft.aspnetcore.authentication.openidconnect.5.0.0.nupkg.sha512",

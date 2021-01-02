@@ -1,13 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace TweetFinder.Data
+namespace ProfileFinder.Data
 {
-    public class DataContext:DbContext
+    public class DataContext : DbContext
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
 
         }
-        public DbSet<SearchedTweets> SearchedTweets { get; set; }
+        public DbSet<SearchedProfiles> SearchedProfiles { get; set; }
     }
 }
