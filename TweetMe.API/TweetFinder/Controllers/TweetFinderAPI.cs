@@ -5,11 +5,11 @@ using TweetFinder.Data;
 
 namespace TweetFinder.Controllers
 {
-    [Route("tweetfinder/")]
+    [Route("tweetfinder")]
     [ApiController]
     public class TweetFinderAPI : ControllerBase
     {
-        public DataContext _context { get; set; }
+        public DataContext _context { get; set; } 
         public TweetFinderAPI(DataContext context)
         {
             _context = context;
@@ -24,6 +24,7 @@ namespace TweetFinder.Controllers
                 int nrOfSearched = searchedTweet.Searched;
 
                 searchedTweet.Update(nrOfSearched + 1);
+                _context.SaveChanges();
             }
             else
             {
@@ -40,5 +41,13 @@ namespace TweetFinder.Controllers
 
             return searchedTweet;
         }
+
+        [HttpGet("populars/{max_tweets}")]
+        public List<SearchedTweets> GetMostSearchedTweets(int max_tweets)
+        {
+            List<SearchedTweets> mostSearchedTweets = _context.SearchedTweets.Select(tweet => tweet).OrderByDescending(tweet => tweet.Searched).Take(max_tweets).ToList();
+
+            return mostSearchedTweets;
+        }   
     }
 }

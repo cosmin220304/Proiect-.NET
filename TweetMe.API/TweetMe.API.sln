@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tweet-Reco", "Tweet-Reco\Tw
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeProfiler", "MeProfiles\MeProfiler.csproj", "{92B98853-B53E-4590-A080-60ADBBD7433D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweetFinder", "TweetFinder\TweetFinder.csproj", "{BC046E0C-202A-4AEE-933E-151926DD17B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TweetFinder", "TweetFinder\TweetFinder.csproj", "{BC046E0C-202A-4AEE-933E-151926DD17B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

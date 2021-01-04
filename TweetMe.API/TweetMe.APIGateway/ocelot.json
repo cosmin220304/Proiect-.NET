@@ -85,18 +85,32 @@
       "SwaggerKey": "me-profiler"
     },
     {
-      "DownstreamPathTemplate": "/tweetfinder/{twitter_id}",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": 44321
-        }
-      ],
+        "DownstreamPathTemplate": "/tweetfinder/{twitter_id}",
+        "DownstreamScheme": "https",
+        "DownstreamHostAndPorts": [
+            {
+                "Host": "localhost",
+                "Port": 44321
+            }
+        ],
 
-      "UpstreamPathTemplate": "/tweetfinder/{twitter_id}",
-      "UpstreamHttpMethod": [ "PATCH" ],
-      "SwaggerKey": "tweet-finder"
+        "UpstreamPathTemplate": "/tweetfinder/{twitter_id}",
+        "UpstreamHttpMethod": [ "PATCH" ],
+        "SwaggerKey": "tweet-finder"
+    },
+    {
+        "DownstreamPathTemplate": "/tweetfinder/populars/{max_tweets}",
+        "DownstreamScheme": "https",
+        "DownstreamHostAndPorts": [
+            {
+                "Host": "localhost",
+                "Port": 44321
+            }
+        ],
+
+        "UpstreamPathTemplate": "/tweetfinder/populars/{max_tweets}",
+        "UpstreamHttpMethod": [ "GET" ],
+        "SwaggerKey": "tweet-finder"
     }
   ],
   "SwaggerEndPoints": [
