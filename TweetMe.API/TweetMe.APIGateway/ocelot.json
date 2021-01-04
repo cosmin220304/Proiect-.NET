@@ -1,118 +1,146 @@
 {
-  "Routes": [
-    {
-      "DownstreamPathTemplate": "/stalker/friends/{username}",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
+    "Routes": [
         {
-          "Host": "localhost",
-          "Port": 44316
-        }
-      ],
+            "DownstreamPathTemplate": "/stalker/friends/{username}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 44316
+                }
+            ],
 
-      "UpstreamPathTemplate": "/stalker/friends/{username}",
-      "UpstreamHttpMethod": [ "GET" ],
-      "SwaggerKey": "stalker"
-    },
-    {
-      "DownstreamPathTemplate": "/stalker/users/{id}",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
+            "UpstreamPathTemplate": "/stalker/friends/{username}",
+            "UpstreamHttpMethod": [ "GET" ],
+            "SwaggerKey": "stalker"
+        },
         {
-          "Host": "localhost",
-          "Port": 44316
-        }
-      ],
+            "DownstreamPathTemplate": "/stalker/users/{id}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 44316
+                }
+            ],
 
-      "UpstreamPathTemplate": "/stalker/users/{id}",
-      "UpstreamHttpMethod": [ "GET" ],
-      "SwaggerKey": "stalker"
-    },
-    {
-      "DownstreamPathTemplate": "/stalker/users",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
+            "UpstreamPathTemplate": "/stalker/users/{id}",
+            "UpstreamHttpMethod": [ "GET" ],
+            "SwaggerKey": "stalker"
+        },
         {
-          "Host": "localhost",
-          "Port": 44316
-        }
-      ],
+            "DownstreamPathTemplate": "/stalker/users",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 44316
+                }
+            ],
 
-      "UpstreamPathTemplate": "/stalker/users",
-      "UpstreamHttpMethod": [ "GET" ],
-      "SwaggerKey": "stalker"
-    },
-    {
-      "DownstreamPathTemplate": "/stalker/tweets",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
+            "UpstreamPathTemplate": "/stalker/users",
+            "UpstreamHttpMethod": [ "GET" ],
+            "SwaggerKey": "stalker"
+        },
         {
-          "Host": "localhost",
-          "Port": 44316
-        }
-      ],
+            "DownstreamPathTemplate": "/stalker/tweets",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 44316
+                }
+            ],
 
-      "UpstreamPathTemplate": "/stalker/tweets",
-      "UpstreamHttpMethod": [ "GET" ],
-      "SwaggerKey": "stalker"
-    },
-    {
-      "DownstreamPathTemplate": "/tweet-reco",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
+            "UpstreamPathTemplate": "/stalker/tweets",
+            "UpstreamHttpMethod": [ "GET" ],
+            "SwaggerKey": "stalker"
+        },
         {
-          "Host": "localhost",
-          "Port": 44355
-        }
-      ],
+            "DownstreamPathTemplate": "/tweet-reco",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 44355
+                }
+            ],
 
-      "UpstreamPathTemplate": "/tweet-reco",
-      "UpstreamHttpMethod": [ "GET", "POST" ],
-      "SwaggerKey": "tweet-reco"
-    },
-    {
-      "DownstreamPathTemplate": "/user",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
+            "UpstreamPathTemplate": "/tweet-reco",
+            "UpstreamHttpMethod": [ "GET", "POST" ],
+            "SwaggerKey": "tweet-reco"
+        },
         {
-          "Host": "localhost",
-          "Port": 44331
+            "DownstreamPathTemplate": "/user",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 44331
+                }
+            ],
+
+            "UpstreamPathTemplate": "/user",
+            "UpstreamHttpMethod": [ "GET" ],
+            "SwaggerKey": "me-profiler"
+        },
+        {
+            "DownstreamPathTemplate": "/tweetfinder/{twitter_id}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 44321
+                }
+            ],
+
+            "UpstreamPathTemplate": "/tweetfinder/{twitter_id}",
+            "UpstreamHttpMethod": [ "PATCH" ],
+            "SwaggerKey": "tweet-finder"
+        },
+        {
+            "DownstreamPathTemplate": "/tweetfinder/populars/{max_tweets}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 44321
+                }
+            ],
+
+            "UpstreamPathTemplate": "/tweetfinder/populars/{max_tweets}",
+            "UpstreamHttpMethod": [ "GET" ],
+            "SwaggerKey": "tweet-finder"
+        },
+        {
+            "DownstreamPathTemplate": "/profilefinder/{user_username}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 44306
+                }
+            ],
+
+            "UpstreamPathTemplate": "/profilefinder/{user_username}",
+            "UpstreamHttpMethod": [ "PATCH" ],
+            "SwaggerKey": "profile-finder"
+        },
+        {
+            "DownstreamPathTemplate": "/profilefinder/populars/{max_profiles}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 44306
+                }
+            ],
+
+            "UpstreamPathTemplate": "/profilefinder/populars/{max_profiles}",
+            "UpstreamHttpMethod": [ "GET" ],
+            "SwaggerKey": "profile-finder"
         }
-      ],
-
-      "UpstreamPathTemplate": "/user",
-      "UpstreamHttpMethod": [ "GET" ],
-      "SwaggerKey": "me-profiler"
-    },
-    {
-        "DownstreamPathTemplate": "/tweetfinder/{twitter_id}",
-        "DownstreamScheme": "https",
-        "DownstreamHostAndPorts": [
-            {
-                "Host": "localhost",
-                "Port": 44321
-            }
-        ],
-
-        "UpstreamPathTemplate": "/tweetfinder/{twitter_id}",
-        "UpstreamHttpMethod": [ "PATCH" ],
-        "SwaggerKey": "tweet-finder"
-    },
-    {
-        "DownstreamPathTemplate": "/tweetfinder/populars/{max_tweets}",
-        "DownstreamScheme": "https",
-        "DownstreamHostAndPorts": [
-            {
-                "Host": "localhost",
-                "Port": 44321
-            }
-        ],
-
-        "UpstreamPathTemplate": "/tweetfinder/populars/{max_tweets}",
-        "UpstreamHttpMethod": [ "GET" ],
-        "SwaggerKey": "tweet-finder"
-    }
-  ],
+    ],
   "SwaggerEndPoints": [
     {
       "Key": "stalker",
@@ -145,14 +173,24 @@
       ]
     },
     {
-      "Key": "tweet-finder",
-      "Config": [
-        {
-          "Name": "TweetFinder API",
-          "Version": "v1",
-          "Url": "https://localhost:44321/swagger/v1/swagger.json"
-        }
-      ]
+        "Key": "tweet-finder",
+        "Config": [
+            {
+                "Name": "TweetFinder API",
+                "Version": "v1",
+                "Url": "https://localhost:44321/swagger/v1/swagger.json"
+            }
+        ]
+    },
+    {
+        "Key": "profile-finder",
+        "Config": [
+            {
+                "Name": "Profile Finder API",
+                "Version": "v1",
+                "Url": "https://localhost:44306/swagger/v1/swagger.json"
+            }
+        ]
     }
   ]
 }

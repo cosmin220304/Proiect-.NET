@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30709.64
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProfileFinder", "ProfileFinder.csproj", "{9596CE2C-A17C-4B3F-B915-8E05DA5DBCCD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9596CE2C-A17C-4B3F-B915-8E05DA5DBCCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9596CE2C-A17C-4B3F-B915-8E05DA5DBCCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9596CE2C-A17C-4B3F-B915-8E05DA5DBCCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9596CE2C-A17C-4B3F-B915-8E05DA5DBCCD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C50F028-7A9C-49A2-9522-4D4F806E9010}
+	EndGlobalSection
+EndGlobal
