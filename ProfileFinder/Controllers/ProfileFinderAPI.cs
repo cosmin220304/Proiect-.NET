@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ProfileFinder.Data;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace ProfileFinder.Controllers
@@ -39,6 +40,21 @@ namespace ProfileFinder.Controllers
             }
 
             return searchedProfile;
+        }
+
+        [HttpGet("{max_profiles}")]
+        public List<SearchedProfiles> GetPopularProfiles(int max_profiles)
+        {
+            List<SearchedProfiles> profiles = _context.SearchedProfiles.Select(user => user).OrderByDescending(user => user.Searched).ToList();
+            List<SearchedProfiles> popularProfiles = new();
+            for (int i = 0; i < profiles.Count; i++)
+            {
+                if (i < max_profiles)
+                {
+                    popularProfiles.Add(profiles[i]);
+                }
+            }
+            return popularProfiles;
         }
     }
 }
