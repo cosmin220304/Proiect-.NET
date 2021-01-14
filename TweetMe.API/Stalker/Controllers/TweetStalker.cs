@@ -48,7 +48,6 @@ namespace Stalker.Controllers
             return user;
         }
 
-        //querystring username
 
         [HttpGet("users")]
         public async Task<UserViewModel> GetUserByUsernameAsync([FromQuery] string username)

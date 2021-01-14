@@ -15,8 +15,8 @@ namespace MeProfiles.Controllers
         [HttpGet("profileByUsername")]
         public MeProfilerViewModel ProfileUserByUsername(string username, int count)
         {
-            var userUrl = $@"https://localhost:44316/stalker/users?username={username}";
-            var tweetsUrl = $@"https://localhost:44316/stalker/tweets?username={username}&count={count}";
+            var userUrl = $@"https://localhost:44303/stalker/users?username={username}";
+            var tweetsUrl = $@"https://localhost:44303/stalker/tweets?username={username}&count={count}";
 
             var json = new WebClient();
             var userJsonString = json.DownloadString(userUrl);
@@ -30,7 +30,7 @@ namespace MeProfiles.Controllers
                 for (var i = 0; i < userProfiler.Tweets.Count; i++)
                 {
                     var tweetMessage = userProfiler.Tweets[i].Text;
-                    var tweetRecoUrl = $@"https://localhost:44355/tweet-reco?SentimentText={tweetMessage}";
+                    var tweetRecoUrl = $@"https://localhost:44303/tweet-reco?SentimentText={tweetMessage}";
                     var tweetSentiment = int.Parse(json.DownloadString(tweetRecoUrl));
                     userProfiler.Tweets[i].Sentiment = tweetSentiment;
                 }
@@ -47,7 +47,7 @@ namespace MeProfiles.Controllers
         [HttpGet("profileById")]
         public MeProfilerViewModel ProfileUserById(int id, int count)
         {
-            var userUrl = $@"https://localhost:44316/stalker/users/{id}";
+            var userUrl = $@"https://localhost:44303/stalker/users/{id}";
 
             var json = new WebClient();
             var userJsonString = json.DownloadString(userUrl);
@@ -55,14 +55,14 @@ namespace MeProfiles.Controllers
 
             try
             {
-                var tweetsUrl = $@"https://localhost:44316/stalker/tweets?username={userProfiler.Username}&count={count}";
+                var tweetsUrl = $@"https://localhost:44303/stalker/tweets?username={userProfiler.Username}&count={count}";
                 var tweetsJsonString = json.DownloadString(tweetsUrl);
                 userProfiler.Tweets = JsonConvert.DeserializeObject<IList<TweetViewModel>>(tweetsJsonString);
 
                 for (var i = 0; i < userProfiler.Tweets.Count; i++)
                 {
                     var tweetMessage = userProfiler.Tweets[i].Text;
-                    var tweetRecoUrl = $@"https://localhost:44355/tweet-reco?SentimentText={tweetMessage}";
+                    var tweetRecoUrl = $@"https://localhost:44303/tweet-reco?SentimentText={tweetMessage}";
                     var tweetSentiment = int.Parse(json.DownloadString(tweetRecoUrl));
                     userProfiler.Tweets[i].Sentiment = tweetSentiment;
                 }

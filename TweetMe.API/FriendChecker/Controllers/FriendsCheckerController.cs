@@ -24,7 +24,7 @@ namespace FriendChecker.Controllers
 
                 foreach(var friend in friends)
                 {
-                    var profilerUrl = @$"https://localhost:5001/meprofiler/profileByUsername?username={friend.Username}&count={tweetsPerUser}";
+                    var profilerUrl = @$"https://localhost:44303/meprofiler/profileByUsername?username={friend.Username}&count={tweetsPerUser}";
                     var profilerJsonString = json.DownloadString(profilerUrl);
                     var friendProfiler = JsonConvert.DeserializeObject<MeProfilerViewModel>(profilerJsonString);
 
