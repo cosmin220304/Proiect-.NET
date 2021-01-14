@@ -272,3 +272,15 @@ C:\Users\adria\Documents\GitHub\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\obj\
 C:\Users\adria\Documents\GitHub\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\obj\Debug\net5.0\ref\TweetMe.APIGateway.dll
 C:\Users\adria\Documents\GitHub\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\obj\Debug\net5.0\TweetMe.APIGateway.pdb
 C:\Users\adria\Documents\GitHub\Proiect-.NET\TweetMe.API\TweetMe.APIGateway\obj\Debug\net5.0\TweetMe.APIGateway.genruntimeconfig.cache
+D:\.NET Project\TweetMe.API\TweetMe.APIGateway\bin\Debug\net5.0\Kros.Utils.dll
+D:\.NET Project\TweetMe.API\TweetMe.APIGateway\bin\Debug\net5.0\Microsoft.OpenApi.dll
+D:\.NET Project\TweetMe.API\TweetMe.APIGateway\bin\Debug\net5.0\MMLib.SwaggerForOcelot.dll
+D:\.NET Project\TweetMe.API\TweetMe.APIGateway\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\.NET Project\TweetMe.API\TweetMe.APIGateway\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\.NET Project\TweetMe.API\TweetMe.APIGateway\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\.NET Project\TweetMe.API\TweetMe.APIGateway\bin\Debug\net5.0\System.Data.SqlClient.dll
+D:\.NET Project\TweetMe.API\TweetMe.APIGateway\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+D:\.NET Project\TweetMe.API\TweetMe.APIGateway\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+D:\.NET Project\TweetMe.API\TweetMe.APIGateway\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+D:\.NET Project\TweetMe.API\TweetMe.APIGateway\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\.NET Project\TweetMe.API\TweetMe.APIGateway\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

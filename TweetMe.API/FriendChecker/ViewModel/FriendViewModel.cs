@@ -1,18 +1,11 @@
-﻿using System.Collections.Generic;
-
-namespace MeProfiler.ViewModels
+﻿namespace FriendChecker.ViewModel
 {
-    public class MeProfilerViewModel
+    public class FriendViewModel
     {
         public long Id { get; set; }
-
         public string Name { get; set; }
-
         public string Username { get; set; }
-
         public string ImageUrl { get; set; }
-
-        public IList<TweetViewModel> Tweets { get; set; }
+        public double mood { get; set; }
     }
 }
-    

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace MeProfiler.ViewModels
+namespace FriendChecker.ViewModel
 {
     public class MeProfilerViewModel
     {
@@ -15,4 +15,3 @@ namespace MeProfiler.ViewModels
         public IList<TweetViewModel> Tweets { get; set; }
     }
 }
-    
