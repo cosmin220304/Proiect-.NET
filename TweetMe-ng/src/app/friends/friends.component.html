@@ -3,15 +3,15 @@
 <div class="friends" *ngIf="this.readyToShow === 1">
     <div class="by-feelings fr-selectors">
         <p class="reco-txt">What you see now:</p>
-        <p [ngClass]="(this.fs == 'all')?'selected-fr':'not-selected-fr'" (click)="sortFriendsByFeelings('all')">all</p>
-        <p [ngClass]="(this.fs == 'happy')?'selected-fr':'not-selected-fr'" (click)="sortFriendsByFeelings('happy')">
+        <p [ngClass]="(this.feeling == 'all')?'selected-fr':'not-selected-fr'" (click)="seeFriendsByFeelings('all')">all</p>
+        <p [ngClass]="(this.feeling == 'happy')?'selected-fr':'not-selected-fr'" (click)="seeFriendsByFeelings('happy')">
             happy
         </p>
-        <p [ngClass]="(this.fs == 'sad')?'selected-fr':'not-selected-fr'" (click)="sortFriendsByFeelings('sad')">sad</p>
+        <p [ngClass]="(this.feeling == 'sad')?'selected-fr':'not-selected-fr'" (click)="seeFriendsByFeelings('sad')">sad</p>
         <p class="reco-txt">friends</p>
     </div>
     <div class="friends-body">
-        <div class="friends-scroll" *ngIf="this.friends.length !== 0">
+        <div class="friends-scroll" *ngIf="this.friends.length !== 0 && this.feeling === 'all'">
            <div class="friend" *ngFor="let friend of this.friends" (click)="seeFriendProfile(friend.username)">
                <div class="image">
                    <img src="{{friend.imageUrl}}">
@@ -21,6 +21,28 @@
                <p class="name">{{friend.name}}</p>
            </div>
         </div>
-        <p class="no-friends-txt" *ngIf="this.friends.length === 0">No friends found</p>
+        <div class="friends-scroll" *ngIf="this.friends.length !== 0 && this.feeling === 'happy'">
+            <div class="friend" *ngFor="let friend of this.happyFriends" (click)="seeFriendProfile(friend.username)">
+                <div class="image">
+                    <img src="{{friend.imageUrl}}">
+                </div>
+                <p class="id">id: {{friend.id}}</p>
+                <p class="username">@{{friend.username}}</p>
+                <p class="name">{{friend.name}}</p>
+            </div>
+        </div>
+        <div class="friends-scroll" *ngIf="this.friends.length !== 0 && this.feeling === 'sad'">
+            <div class="friend" *ngFor="let friend of this.sadFriends" (click)="seeFriendProfile(friend.username)">
+                <div class="image">
+                    <img src="{{friend.imageUrl}}">
+                </div>
+                <p class="id">id: {{friend.id}}</p>
+                <p class="username">@{{friend.username}}</p>
+                <p class="name">{{friend.name}}</p>
+            </div>
+        </div>
+        <p class="no-friends-txt" *ngIf="this.friends.length === 0 && this.feeling === 'all'">No friends found</p>
+        <p class="no-friends-txt" *ngIf="this.happyFriends.length === 0 && this.feeling === 'happy'">No happy friends found</p>
+        <p class="no-friends-txt" *ngIf="this.sadFriends.length === 0 && this.feeling === 'sad'">No sad friends found</p>
     </div>
 </div>

@@ -1,14 +1,15 @@
 <div class="bg"></div>
-<div class="popular">
+<div class="spinner-container"><mat-spinner *ngIf="this.readyToShow < 1" class="spinner"></mat-spinner></div>
+<div class="popular" *ngIf="this.readyToShow === 1">
     <div class="header">
         <p class="reco-txt">What you see now: </p>
         <p>Most searched </p>
         <p [ngClass]="(this.popular == 'profiles')?'selected-p':'not-selected-p'" (click)="getPopular('profiles')">profiles</p>
-        <p [ngClass]="(this.popular == 'tweets')?'selected-p':'not-selected-p'" (click)="getPopular('tweets')">tweets</p>
+        <!-- <p [ngClass]="(this.popular == 'tweets')?'selected-p':'not-selected-p'" (click)="getPopular('tweets')">tweets</p> -->
     </div>
     <div class="popular-body">
         <p class="no-popular-txt" *ngIf="this.profiles.length === 0 && this.popular === 'profiles'">No popular profiles found</p>
-        <p class="no-popular-txt" *ngIf="this.tweets.length === 0 && this.popular === 'tweets'">No popular tweets found</p>
+        <!-- <p class="no-popular-txt" *ngIf="this.tweets.length === 0 && this.popular === 'tweets'">No popular tweets found</p> -->
         <div class="popular-profiles-scroll" *ngIf="this.popular === 'profiles' && this.profiles.length != 0">
             <div class="profile" *ngFor="let profile of this.profiles" (click)="seeProfile(profile.username)">
                 <div class="image">
@@ -19,7 +20,7 @@
                 <p class="name">{{profile.name}}</p>
             </div>
         </div>
-        <div class="popular-tweets-scroll" *ngIf="this.popular === 'tweets' && this.tweets.length != 0">
+        <!-- <div class="popular-tweets-scroll" *ngIf="this.popular === 'tweets' && this.tweets.length != 0">
             <div class="tweets" *ngFor="let tweet of this.tweets">
                 <div class="tweet">
                     <span class="tweet-badge">
@@ -40,6 +41,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>

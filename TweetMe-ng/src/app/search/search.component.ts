@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { map } from 'rxjs/operators';
 import { User } from '../_models/user';
+import { FinderService } from '../_services/finder.service';
 import { StalkerService } from '../_services/stalker.service';
 
 @Component({
@@ -17,7 +18,7 @@ export class SearchComponent implements OnInit {
   searchResult: User;
   notFound = 0;
 
-  constructor(fb: FormBuilder, private stalker: StalkerService) {
+  constructor(fb: FormBuilder, private stalker: StalkerService, private finder: FinderService) {
     this.searchForm = fb.group({
       username: this.username
     });
@@ -38,6 +39,7 @@ export class SearchComponent implements OnInit {
             this.notFound = 0;
             this.searchResult = res;
             this.showSearchBar = !this.showSearchBar;
+            this.finder.patchProfileSearch(res.username);
           }
         },        
         err => alert('Problem receiving data'),

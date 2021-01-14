@@ -36,7 +36,6 @@ export class ProfileComponent implements OnInit {
   constructor(private profiler: ProfilerService, private stalker: StalkerService, private activatedRoute: ActivatedRoute) {
     this.activatedRoute.queryParams.subscribe(params => {
       this.user = params['username'];
-      console.log(this.user); 
     });
   }
 
@@ -44,7 +43,6 @@ export class ProfileComponent implements OnInit {
     this.profiler.getProfile(this.user, 50)
       .subscribe(
         res => {
-          console.log(res.tweets);
           this.profile = res;
           this.sortTweetsByDate(this.ts);
         },
@@ -61,7 +59,6 @@ export class ProfileComponent implements OnInit {
 
   changeTweetsSelector(select: string){
     this.ts = select;
-    console.log(this.ts);
     if(this.ts === 'happy'){
       this.tweets = this.tweets.filter(t => t.sentiment === 1);
       this.prediction = 100;
@@ -139,11 +136,9 @@ export class ProfileComponent implements OnInit {
       if(shortName.length > 2){
         if(user.name.length > 16){
           user.name = shortName[0] + ' ' + shortName[1];
-          console.log(user.name);
         }
       }
     });
-    console.log(this.friendList);
     this.readyToShow += 1;
   }
   
