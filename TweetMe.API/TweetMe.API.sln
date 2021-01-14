@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TweetFinder", "TweetFinder\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProfileFinder", "ProfileFinder\ProfileFinder.csproj", "{7D4210AE-542E-40E7-8FC4-E53E685013AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FriendChecker", "FriendChecker\FriendChecker.csproj", "{AF783045-374C-4181-B827-C870884ADA85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FriendChecker", "FriendChecker\FriendChecker.csproj", "{AF783045-374C-4181-B827-C870884ADA85}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

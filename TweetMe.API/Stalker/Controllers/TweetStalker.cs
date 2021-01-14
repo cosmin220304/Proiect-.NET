@@ -76,5 +76,18 @@ namespace Stalker.Controllers
 
             return tweets;
         }
+
+        [HttpGet("tweets/{id}")]
+        public async Task<TweetViewModel> GetTweetByIdAsync(string id)
+        {
+            var client = _twitterConnection.GetTwitterClient();
+
+            string url = $"2/tweets/{id}";
+            HttpResponseMessage response = await client.GetAsync(url);
+            var responseBody = await response.Content.ReadAsStringAsync();
+            TweetViewModel tweet = JsonConvert.DeserializeObject<TweetViewModel>(responseBody);
+
+            return tweet;
+        }
     }
 }
